@@ -83,6 +83,8 @@ Tubular lock 和普通弹子锁的底层原理完全一样——**key pin + driv
 
 ---
 
+> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
 ## 关联
 
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer

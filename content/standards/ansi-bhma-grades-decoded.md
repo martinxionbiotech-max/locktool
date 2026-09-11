@@ -103,6 +103,8 @@ Grade 1 最高（商用/机构），Grade 3 最低（住宅）。排序 Grade 1 
 
 ---
 
+> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
 ## 关联
 
 - → Lock Security Standards Explained（Pillar）
