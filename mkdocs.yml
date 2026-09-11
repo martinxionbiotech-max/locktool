@@ -52,10 +52,12 @@ nav:
   - Vault & Safe:
       - vault/index.md
       - Safe Lock Types Explained: vault/safe-lock-types-explained.md
+      - Mechanical vs Electronic Safe Locks: vault/mechanical-vs-electronic-safe-locks.md
       - Safe Burglary Ratings Decoded: vault/safe-burglary-ratings-decoded.md
   - Access Control:
       - access-control/index.md
       - Electronic Access Control Explained: access-control/electronic-access-control-explained.md
+      - Access Control Credentials Explained: access-control/access-control-credentials-explained.md
       - Electric Strike vs Maglock: access-control/electric-strike-vs-maglock.md
 
 markdown_extensions:
