@@ -98,16 +98,16 @@ COMMERCIAL CONVERSION
 
 | Country/Region | Product | Legal Status | Import Restriction | Possession Restriction | Marketing Restriction | Platform Risk | Risk Level | Source | Last Checked |
 |---|---|---|---|---|---|---|---|---|---|
-| US | lock picks / pick sets | [REVIEW_REQUIRED] 州州不一（多数州"意图"导向合法，TN/MS/NV/OH 等需谨慎） | [UNKNOWN] | 多数州需"合法意图"，部分州 possession 为 prima facie 证据 | 禁止面向盗窃/未授权进入的表述 | 中 | B/C | toool.us, Wikipedia (lock_picking) | 2026-09-11 |
-| UK (England & Wales) | lock picks / burglary tools | [REVIEW_REQUIRED] "going equipped / likely to be used in burglary" 罪名，最高 3 年（Crown） | [UNKNOWN] | 需"合法目的"抗辩；无正当理由持有可诉 | 禁止 burglary 导向 | 中高 | B/C | Wikipedia, UK theft act | 2026-09-11 |
-| UK (Scotland) | lock picks | [UNKNOWN] | [UNKNOWN] | [UNKNOWN] | [UNKNOWN] | 中高 | [UNKNOWN] | 待补 | — |
-| EU (general) | lock picks | 大多数成员国不监管持有 | 低 | 低（Hungary 例外，公共场所持有禁止） | 一般 | 低-中 | B | Wikipedia | 2026-09-11 |
-| DE | lock picks | 合法（需物主许可） | 低 | 低 | 一般 | 低 | A/B | Wikipedia | 2026-09-11 |
-| HU | lock picks | **公共场所持有禁止（特例）** | [UNKNOWN] | 高 | 高 | 高 | C/D | Wikipedia | 2026-09-11 |
-| Canada | lock picks | [REVIEW_REQUIRED] 各省不一 | [UNKNOWN] | 部分省需 license | [UNKNOWN] | 中 | B/C | 待补 | — |
-| AU | lock picks | [REVIEW_REQUIRED] 各州/领地不一 | [UNKNOWN] | 意图导向 | [UNKNOWN] | 中 | B/C | 待补 | — |
-| NZ | lock picks | 合法，但持有用于犯罪意图最高 3 年 | [UNKNOWN] | 意图导向 | 一般 | 中 | B | lockpickings | 2026-09-11 |
-| automotive key programming / immobilizer tools | [REVIEW_REQUIRED] 高风险：与车辆防盗绕过强相关 | [UNKNOWN] | [UNKNOWN] | 禁止"绕过防盗/免钥匙偷车" | 高 | **C** | 待补 | — |
+| US | lock picks / pick sets | 联邦无统一禁止；各州不一——**多数州合法需"意图"导向**，但 MN/MS/NV/OH/VA 将 possession 视为 prima facie evidence（需自证非犯罪意图），TN 另加"未持证不得营利从事锁匠"限制；IL 禁 bump keys | 无联邦进口禁令（工具类正常通关） | 多数州需"合法意图"；MS 需"非隐蔽"（隐蔽持有即 prima facie）；NV/OH/VA 需自证无犯罪意图 | 禁止面向盗窃/未授权进入的表述 | 中 | B/C | worldpopulationreview (2026), toool.us, Wikipedia lock_picking（CA Penal Code §466 明确 burglary tools 需 intent） | 2026-09-11 |
+| UK (England & Wales) | lock picks / burglary tools | **Theft Act 1968 s.25 "Going equipped"**：非居住地携带可用于 burglary/theft 的物件即构成犯罪；Crown Court 最高 **3 年监禁 + 无限罚金**（Magistrates 最高 12 个月，2022-05-02 后施行） | 无专门进口禁令，但销售/供应面向盗窃用途的工具受 CPS 追诉 | "not at place of abode" + 携带工具 + 可证明用于 burglary/theft 即成立；s.25(3) 若工具"made/adapted for"用途即推定故意 | 禁止 burglary 导向 | 中高 | B/C | legislation.gov.uk (s.25), cps.gov.uk, sentencingcouncil.org.uk | 2026-09-11 |
+| UK (Scotland) | lock picks | **独立法律体系（Scots law）**，不受 Theft Act 1968 s.25（该条标 E+W，仅英格兰和威尔士适用）；苏格兰以**普通法 theft / housebreaking offenses** 追诉携带 burglary 工具的意图犯罪 | 无专门进口禁令 | 依苏格兰普通法：携带工具 + 意图入室/盗窃可诉；无成文"going equipped"对应条款 | 禁止 burglary / housebreaking 导向 | 中高 | B/C | sccjr.ac.uk（苏格兰刑事司法体系）, Wikipedia Scots law | 2026-09-11 |
+| EU (general) | lock picks | **无欧盟统一法规**，刑法由各成员国自行处理；多数成员国不监管持有 | 低 | 低（Hungary 例外，公共场所持有禁止） | 一般；法国/意大利/西班牙强调"情境"判断 | 低-中 | B | Wikipedia lock_picking, multipick.com | 2026-09-11 |
+| DE | lock picks | 合法——无专门法规；需物主许可；§202c StGB（"Hacker Paragraph"）仅在关联实际未经授权访问时才可罚；locksport 俱乐部普遍 | 低（工具自由买卖） | 低 | 一般（公开持锁需注意透明度/情境，避免"间谍式"隐蔽） | 低 | A/B | Wikipedia, multipick.com (§202c StGB) | 2026-09-11 |
+| HU | lock picks | **EU 内特例**：`175/2003 (X.28.) Korm. rendelet` 禁止**公共场所持有**锁匠工具（家中持有合法） | 中高 | 高（公共场所持有归为"对公共安全特别危险的器具"） | 高 | 高 | C/D | Wikipedia（引 Jogtár 175/2003 Korm. rendelet） | 2026-09-11 |
+| Canada | lock picks | 联邦《刑法》s.351(1) **"Possession of break-in instruments"**：无合法理由持有可用于破入场所/车辆/保险柜的工具且明知用途，即构成犯罪（可公诉，最高 **10 年**）；**锁匠工具合法持有，但与 crowbar 同类，需无犯罪意图** | 无联邦专门进口禁令 | s.351 需无犯罪意图；**Alberta 是唯一要求对 lockpick 持有注册的省份**；BC/Ontario **从事锁匠需 license**（Consumer Protection BC / Ontario Locksmiths Licensing Act 1996） | 禁止 break-in 导向 | 中 | B/C | laws-lois.justice.gc.ca (s.351 官方条文), Wikipedia | 2026-09-11 |
+| AU | lock picks | 各州/领地独立立法，**无联邦统一法**；NSW 最严（strict liability，无需证明意图） | [REVIEW_REQUIRED] 需逐州核海关入境细则 | NSW s114(1)(b)（strict liability，最高 2/7 年）、VIC s49D（2 年）、QLD s425（3 年）、WA s407（3 年）、SA s21C（罚款$2,500 或 6 个月）、TAS s7B（50 penalty units或2年）、NT s57（$1,000/6个月）、ACT s315（going equipped）——多数需"lawful excuse"抗辩 | 禁止 burglary / housebreaking 导向 | 中高 | B/C | bareboneslockpicking.com（含各州法条表）, legislation（Crimes Act 1900 NSW 等） | 2026-09-11 |
+| NZ | lock picks | 工具本身合法；Crimes Act 1961 s.233 **"possession of instrument for burglary"**：携带工具 + 意图用于 burglary 即犯罪，最高 **3 年** | 无专门进口禁令（可正常进口，见 LegalAdviceNZ 讨论） | 意图导向——只 pick 自己拥有的锁即安全 | 一般 | 中 | B | legislation.govt.nz (s.233 官方条文), Wikipedia | 2026-09-11 |
+| automotive key programming / immobilizer tools | 高风险双用途；**UK 2024/2025 新法**新增"制造/供应/持有电子盗窃工具（relay attack / key programmer / clone 设备）"罪名，最高 **5 年**；US 由联邦 Vehicle Theft Prevention Standard（49 U.S.C. 33106）规范 immobilizer 性能要求 | [REVIEW_REQUIRED] UK 供应面向盗窃的 keyless 设备属新罪；US 无专门进口禁令但供应面向盗车的 programmer 涉刑 | 依用途区分：授权锁匠/经销商合法操作 vs 面向盗车的 supply 非法 | 禁止"绕过防盗/免钥匙偷车/image clone/relay attack"任何表述 | 高 | **C** | specialist-trackers.uk、gotyoucovered.com（UK 新法）、federalregister.gov | 2026-09-11 |
 
 > 说明：凡 [UNKNOWN] 或 [REVIEW_REQUIRED] 项，禁止 Agent 编造结论；必须引用官方政府、海关、监管机构或权威法律来源后填入。
 
@@ -160,10 +160,21 @@ Knowledge Hub 可以解释（WHITE）：
 
 ## 附：本文件引用信源（当前）
 
-- Wikipedia — "Lock picking"（美/英/德/EU/匈牙利法条概述）
-- worldpopulationreview.com — "Lockpick Laws by State 2026"（美国州法全表）
-- toool.us — "Lockpicking Laws"（Open Organization of Lockpickers，含州法原文引注）
-- unitedlocksmith.net — "Lock Pick Laws, Rules And Regulations"（TN/MS 最严格州案例分析）
-- lockpickings.com — "Are Lock Pick Sets Illegal"（西欧/北欧/UK/NZ/AU 概述）
+> 官方（一手，正式发布前优先引用）：
 
-> 以上为二手/聚合信源，正式发布前需以官方政府/海关/监管机构原文为准。
+- **UK**: legislation.gov.uk — Theft Act 1968 s.25（Going equipped，标 E+W）；cps.gov.uk — Theft Act Offences 起诉指南；sentencingcouncil.org.uk — Going equipped 量刑指南
+- **Canada**: laws-lois.justice.gc.ca — Criminal Code s.351/s.353（Possession of break-in instruments / 汽车万能钥匙）官方条文
+- **Australia**: Crimes Act 1900 (NSW) s114(1)(b)；Summary Offences Act 1966 (Vic) s49D；Criminal Code (Qld) s425；Criminal Code (WA) s407；Summary Offences Act 1953 (SA) s21C；Police Offences Act 1935 (Tas) s7B；Criminal Code 2002 (ACT) s315；Summary Offences Act (NT) s57
+- **New Zealand**: legislation.govt.nz — Crimes Act 1961 s.233（Possession of instrument for burglary）官方条文
+- **US**: federalregister.gov — Exemption from Vehicle Theft Prevention Standard（49 U.S.C. 33106）；California Penal Code §466
+
+> 二手/聚合（用以定位，不以之为法律结论）：
+
+- Wikipedia — "Lock picking"（美/英/德/EU/匈牙利/加拿大/澳洲法条概述）
+- worldpopulationreview.com — "Lockpick Laws by State 2026"（美国州法汇总）
+- toool.us — "Lockpicking Laws"（Open Organization of Lockpickers）
+- bareboneslockpicking.com — 澳洲各州法条对照表
+- multipick.com / lockpickings.com — 德/EU/西欧法条概述
+- sccjr.ac.uk — 苏格兰刑事司法体系（说明 Scots law 独立于 Theft Act 1968）
+
+> ⚠️ 仍标记 [REVIEW_REQUIRED] 的项（AU 进口细则、automotive 供应新罪的具体实施），正式发布前须由相应法域资质律师复核。所有日期以文中 Last Checked 为准。
