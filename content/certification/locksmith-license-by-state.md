@@ -1,3 +1,7 @@
+---
+title: "Locksmith License by State: Which US States Require a License (and Why the List Keeps Changing)"
+description: "Locksmith license requirements by state: which U.S. states require a license, why the 13-state list keeps changing, and how to check your state."
+---
 # Locksmith License by State: Which US States Require a License (and Why the List Keeps Changing)
 
 > 项目：Locktool · Content

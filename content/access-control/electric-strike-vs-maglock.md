@@ -1,3 +1,7 @@
+---
+title: "Electric Strike vs Maglock: How to Choose the Right Electronic Lock Hardware"
+description: "Electric strike vs maglock compared: how each works, fail-safe vs fail-secure behavior, and which electronic lock fits your door, code, and traffic."
+---
 # Electric Strike vs Maglock: How to Choose the Right Electronic Lock Hardware
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Lock Pick Types Explained: Hooks, Rakes, Diamonds, and the Tension Wrench That Makes Them Work"
+description: "Lock pick types explained: hooks, rakes, and diamonds compared — and why the tension wrench, not the pick, is the real tool that makes picking work."
+---
 # Lock Pick Types Explained: Hooks, Rakes, Diamonds, and the Tension Wrench That Makes Them Work
 
 > 项目：Locktool · Content

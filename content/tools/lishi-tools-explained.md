@@ -1,3 +1,7 @@
+---
+title: "Lishi Tools Explained: The Keyway-Matched 2-in-1 Pick and Decoder"
+description: "Lishi tools explained: how keyway-matched 2-in-1 pick/decoders work, the ~100 models available, and how to spot counterfeit Lishi picks."
+---
 # Lishi Tools Explained: The Keyway-Matched 2-in-1 Pick and Decoder
 
 > 项目：Locktool · Content

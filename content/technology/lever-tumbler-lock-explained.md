@@ -1,3 +1,7 @@
+---
+title: "Lever Tumbler Lock Explained: The 1778 Mechanism Behind British Front Doors and Safes"
+description: "Lever tumbler lock explained: the 1778 Barron mechanism, how levers and the bolt stump work, and why BS3621 still specifies lever locks for UK doors."
+---
 # Lever Tumbler Lock Explained: The 1778 Mechanism Behind British Front Doors and Safes
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Key Cutting Machines Explained: Code vs Duplication, Edge vs High-Security Keys"
+description: "Key cutting machines explained: code cutting vs duplication, edge vs laser-cut (sidewinder) keys, and how to match a machine to high-security blanks."
+---
 # Key Cutting Machines Explained: Code vs Duplication, Edge vs High-Security Keys
 
 > 项目：Locktool · Content

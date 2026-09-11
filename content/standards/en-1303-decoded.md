@@ -1,3 +1,7 @@
+---
+title: "EN 1303 Decoded: How to Read the 8-Digit Code on a Euro Cylinder Lock"
+description: "EN 1303 decoded: how to read the 8-digit code on a euro cylinder lock, digit by digit — key security, attack resistance, and corrosion grades explained."
+---
 # EN 1303 Decoded: How to Read the 8-Digit Code on a Euro Cylinder Lock
 
 > 项目：Locktool · Content

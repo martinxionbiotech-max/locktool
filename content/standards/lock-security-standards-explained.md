@@ -1,3 +1,7 @@
+---
+title: "Lock Security Standards Explained: ANSI/BHMA, EN 1303, UL 437, and TS007"
+description: "Lock security standards explained: ANSI/BHMA, EN 1303, UL 437, and TS007 compared — what each measures and why they're not directly comparable."
+---
 # Lock Security Standards Explained: ANSI/BHMA, EN 1303, UL 437, and TS007
 
 > 项目：Locktool · Content

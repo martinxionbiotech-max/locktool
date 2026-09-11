@@ -1,3 +1,7 @@
+---
+title: "Pin Tumbler vs Wafer vs Disc Detainer: A Technical Comparison of the Three Core Lock Mechanisms"
+description: "Pin tumbler vs wafer vs disc detainer compared: how the three core lock mechanisms differ, their combination counts, and which fits each security need."
+---
 # Pin Tumbler vs Wafer vs Disc Detainer: A Technical Comparison of the Three Core Lock Mechanisms
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Locksmith Tool Taxonomy: The Complete Classification of Professional Locksmith Equipment"
+description: "Locksmith tool taxonomy: a complete classification of professional locksmith equipment, grouped by function — from picks and tension tools to programmers."
+---
 # Locksmith Tool Taxonomy: The Complete Classification of Professional Locksmith Equipment
 
 > 项目：Locktool · Content

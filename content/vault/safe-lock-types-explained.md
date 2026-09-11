@@ -1,3 +1,7 @@
+---
+title: "Safe Lock Types Explained: Mechanical Dial vs Electronic vs Biometric (and the UL 768 Group Ratings)"
+description: "Safe lock types explained: mechanical dial vs electronic keypad vs biometric, plus UL 768 Group 2/2M/1/1R and UL 2058 Type 1 ratings decoded."
+---
 # Safe Lock Types Explained: Mechanical Dial vs Electronic vs Biometric (and the UL 768 Group Ratings)
 
 > 项目：Locktool · Content

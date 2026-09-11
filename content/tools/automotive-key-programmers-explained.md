@@ -1,3 +1,7 @@
+---
+title: "Automotive Key Programmers Explained: Transponder Keys, OBD Programming, and the Tools That Program Them"
+description: "Automotive key programmers explained: transponder keys, OBD and EEPROM programming, and why most programmers use a hardware-buy + software-subscription model."
+---
 # Automotive Key Programmers Explained: Transponder Keys, OBD Programming, and the Tools That Program Them
 
 > 项目：Locktool · Content

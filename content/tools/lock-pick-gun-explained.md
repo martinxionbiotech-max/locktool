@@ -1,3 +1,7 @@
+---
+title: "Lock Pick Gun Explained: How Snap Guns and Electric Pick Guns Differ from Manual Picking"
+description: "Lock pick gun explained: how snap guns and electric pick guns work, why they only suit pin tumbler locks, and how they relate to bumping."
+---
 # Lock Pick Gun Explained: How Snap Guns and Electric Pick Guns Differ from Manual Picking
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Access Control Credentials Explained: Prox Cards, Smart Cards, Biometrics, and the Wiegand Backbone"
+description: "Access control credentials compared: 125kHz prox cards vs 13.56MHz smart cards vs biometrics, and how the Wiegand interface works. Choose the right credential by risk level."
+---
 # Access Control Credentials Explained: Prox Cards, Smart Cards, Biometrics, and the Wiegand Backbone
 
 > 项目：Locktool · Content

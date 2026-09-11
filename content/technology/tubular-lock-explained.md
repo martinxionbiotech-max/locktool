@@ -1,3 +1,7 @@
+---
+title: "Tubular Lock Explained: The Radial Pin Tumbler Behind Vending Machines and Bike Locks"
+description: "Tubular lock explained: how the radial pin tumbler mechanism works, why dedicated tools make it overrated, and where tubular locks are still used."
+---
 # Tubular Lock Explained: The Radial Pin Tumbler Behind Vending Machines and Bike Locks
 
 > 项目：Locktool · Content

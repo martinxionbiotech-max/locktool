@@ -1,3 +1,7 @@
+---
+title: "Locksmith Apprenticeship Explained: How Long It Takes, What You Learn, and How It Compares to Trade School"
+description: "Locksmith apprenticeship explained: how long it takes (4000 hours in Florida to 900 in NY), what you learn, and apprenticeship vs trade school trade-offs."
+---
 # Locksmith Apprenticeship Explained: How Long It Takes, What You Learn, and How It Compares to Trade School
 
 > 项目：Locktool · Content

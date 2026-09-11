@@ -1,3 +1,7 @@
+---
+title: "ANSI/BHMA Grade 1, 2, and 3 Decoded: What Door Lock Grades Actually Measure"
+description: "ANSI/BHMA lock grades decoded: what Grade 1, 2, and 3 actually measure (durability, impact, strength) — and why higher grade doesn't mean pick-proof."
+---
 # ANSI/BHMA Grade 1, 2, and 3 Decoded: What Door Lock Grades Actually Measure
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Disc Detainer Locks Explained: Why the Rotating-Disc Mechanism Is the Hardest Common Lock to Pick"
+description: "Disc detainer locks explained: how the rotating-disc mechanism, false gates, and DBS make Abloy-style locks the hardest common lock to pick."
+---
 # Disc Detainer Locks Explained: Why the Rotating-Disc Mechanism Is the Hardest Common Lock to Pick
 
 > 项目：Locktool · Content

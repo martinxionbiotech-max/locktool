@@ -1,3 +1,7 @@
+---
+title: "Dimple Lock Explained: How Side-Pinned Pin Tumblers Work and Where They Sit on the Security Ladder"
+description: "Dimple lock explained: how the side-pinned pin tumbler mechanism works, where dimple cylinders sit on the security ladder, and the snap-attack weakness."
+---
 # Dimple Lock Explained: How Side-Pinned Pin Tumblers Work and Where They Sit on the Security Ladder
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "How to Become a Locksmith: Certification Paths, Licensing, and a Realistic Career Roadmap"
+description: "How to become a locksmith, step by step: license vs certification, apprenticeship vs trade school, and a realistic timeline to enter the trade."
+---
 # How to Become a Locksmith: Certification Paths, Licensing, and a Realistic Career Roadmap
 
 > 项目：Locktool · Content

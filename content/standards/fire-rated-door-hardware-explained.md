@@ -1,3 +1,7 @@
+---
+title: "Fire-Rated Door Hardware Explained: NFPA 80, Self-Closing, and Why \"Fire Exit\" ≠ \"Panic\" Hardware"
+description: "Fire-rated door hardware explained: NFPA 80 self-closing and self-latching rules, and why fire exit hardware is not the same as panic hardware."
+---
 # Fire-Rated Door Hardware Explained: NFPA 80, Self-Closing, and Why "Fire Exit" ≠ "Panic" Hardware
 
 > 项目：Locktool · Content

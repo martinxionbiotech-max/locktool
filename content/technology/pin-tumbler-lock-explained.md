@@ -1,3 +1,7 @@
+---
+title: "Pin Tumbler Lock: How the Mechanism Works, Key Combinations, and Security Pins"
+description: "Pin tumbler lock explained: how pins, the shear line, and MACS work — key combinations, security pins, and what actually improves pick resistance."
+---
 # Pin Tumbler Lock: How the Mechanism Works, Key Combinations, and Security Pins
 
 > 项目：Locktool · Content

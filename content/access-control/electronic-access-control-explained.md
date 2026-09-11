@@ -1,3 +1,7 @@
+---
+title: "Electronic Access Control Explained: Electric Strikes, Maglocks, and Fail-Safe vs Fail-Secure"
+description: "Electronic access control explained: electric strikes, maglocks, and electrified locksets — plus why fail-safe vs fail-secure is the critical design decision."
+---
 # Electronic Access Control Explained: Electric Strikes, Maglocks, and Fail-Safe vs Fail-Secure
 
 > 项目：Locktool · Content

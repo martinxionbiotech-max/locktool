@@ -1,3 +1,7 @@
+---
+title: "Safe Burglary Ratings Decoded: RSC, TL-15, TL-30, and the \"Net Working Time\" Misconception"
+description: "Safe burglary ratings decoded: UL 687 RSC, TL-15, and TL-30 explained — and why net working time is not the same as real break-in time."
+---
 # Safe Burglary Ratings Decoded: RSC, TL-15, TL-30, and the "Net Working Time" Misconception
 
 > 项目：Locktool · Content

@@ -1,3 +1,7 @@
+---
+title: "Mechanical vs Electronic Safe Locks: Reliability, Security, and the 20:1 Drilling Ratio"
+description: "Mechanical vs electronic safe locks compared: UL 768 groups vs UL 2058 Type 1, the 20:1 drilling ratio, and which reliability/security trade-off fits you."
+---
 # Mechanical vs Electronic Safe Locks: Reliability, Security, and the 20:1 Drilling Ratio
 
 > 项目：Locktool · Content
