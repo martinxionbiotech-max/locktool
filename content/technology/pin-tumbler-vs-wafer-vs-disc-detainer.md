@@ -123,17 +123,19 @@ Bump 开锁依赖"撞动销钉让 driver pin 弹起瞬间对齐剪切线"。disc
 
 ## Sources（官方/一手优先）
 
-- Abloy（官方）— ABLOY PROTEC2 keying platform（1.9 亿组合、DBS、专利至 2031、SCEC SL3）
-- ScienceDirect — Tumbler Mechanism（pin tumbler 组合数表：5-pin ≈ 8,200）
+- [Abloy](https://www.abloy.com/au/en/products/keying-platforms/abloy-protec2)（官方）— ABLOY PROTEC2 keying platform（1.9 亿组合、DBS、专利至 2031、SCEC SL3）
+- [ScienceDirect](https://www.sciencedirect.com/) — Tumbler Mechanism（pin tumbler 组合数表：5-pin ≈ 8,200）
 - Wikipedia — Pin tumbler lock / Lock picking（机制 + master keying）
 - Firgelli Automations — Pin Tumbler Lock（Schlage/Kwikset 深度增量、MACS、商用 30k–50k 组合）
 - LockPickWorld — Types of Locks / Disc Detainer Locks Explained / Pin Tumbler Locks Explained（安全评级对照、机制对照表）
 - Locksmith Ledger — Abloy Protec2（盘片控制器、angle 0–6 间隔 15°、锡青铜盘片）
-- Lockwiki — Abloy Protec（9/11 盘片、EN 1303、UL 437）
+- [Lockwiki](https://www.lockwiki.com/) — Abloy Protec（9/11 盘片、EN 1303、UL 437）
 
 > 组合数与规格均来自上述信源，非我方自制。未实测抗撬时间，文中未做这类不可验证的量化断言。
 
 ---
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联（内部链接规划）
 

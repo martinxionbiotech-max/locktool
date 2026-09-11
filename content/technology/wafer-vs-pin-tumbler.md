@@ -85,12 +85,14 @@ Wafer lock（叶片锁）和 pin tumbler lock（弹子锁）都用"挡住内芯�
 ## Sources
 
 - LockPickWorld — Pin Tumbler Locks Explained / Types of Locks（机制对照、安全评级）
-- ScienceDirect — Tumbler Mechanism（pin tumbler 组合数）
+- [ScienceDirect](https://www.sciencedirect.com/) — Tumbler Mechanism（pin tumbler 组合数）
 - Wikipedia — Pin tumbler lock / Wafer tumbler lock
 
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

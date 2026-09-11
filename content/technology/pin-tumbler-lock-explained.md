@@ -112,12 +112,14 @@ spool/serrated/mushroom 等特殊形状的销钉，通过制造 false set 让撬
 ## Sources
 
 - Firgelli Automations — Pin Tumbler Lock（组合数公式、Schlage MACS=7、±0.001" 公差、3–5 万商用组合）
-- ScienceDirect — Tumbler Mechanism（组合数参考表：5 销 ≈ 8,200）
-- Lockwiki — MACS / Shear line（MACS 定义与公式）
+- [ScienceDirect](https://www.sciencedirect.com/) — Tumbler Mechanism（组合数参考表：5 销 ≈ 8,200）
+- [Lockwiki](https://www.lockwiki.com/) — MACS / Shear line（MACS 定义与公式）
 - Wikipedia — Pin tumbler lock（机制、master keying）
 - LockPickWorld — Pin Tumbler Locks Explained（安全销、练习锁、安全等级）
 
 ---
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

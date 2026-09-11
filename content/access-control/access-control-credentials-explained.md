@@ -123,6 +123,8 @@ Prox（125kHz）未加密、可克隆；智能卡（13.56MHz）有加密、reade
 
 ---
 
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+
 ## 关联
 
 - → Electronic Access Control Explained（Pillar，含 credential→reader→controller→lock 全栈）

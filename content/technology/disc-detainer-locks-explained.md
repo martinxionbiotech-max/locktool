@@ -92,15 +92,17 @@ Abloy Protec2 有约 **1.97 亿**组合（官方数据），配合专利保护�
 
 ## Sources
 
-- Abloy（官方）— ABLOY PROTEC2（1.9 亿组合、DBS、SCEC SL3、专利至 2031）
+- [Abloy](https://www.abloy.com/au/en/products/keying-platforms/abloy-protec2)（官方）— ABLOY PROTEC2（1.9 亿组合、DBS、SCEC SL3、专利至 2031）
 - Locksmith Ledger — Abloy Protec2 / Abloy Introduces Protec 2（盘片控制器、angle 0–6 间隔 15°、锡青铜盘片、全硬化钢外壳）
-- Lockwiki — Abloy Protec（9/11 盘片、EN 1303、UL 437、DBS）
+- [Lockwiki](https://www.lockwiki.com/) — Abloy Protec（9/11 盘片、EN 1303、UL 437、DBS）
 - LockPickWorld — Disc Detainer Locks Explained（盘片/真假缺口/侧闩机制）
 - 1907 Emil Henriksson 发明（Wikipedia / Abloy 历史）
 
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

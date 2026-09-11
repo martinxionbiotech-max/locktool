@@ -115,7 +115,7 @@ Digit 7 是钥匙安全（防复制，1–6 级），Digit 8 是攻击抵抗（�
 
 ## Sources
 
-- Lockwiki — EN 1303（8 位码逐位、Digit 6 腐蚀温度 grade 0/A/B/C、Digit 7 key security grade 1–6 with differs/detainers、Digit 8 attack resistance grade 0~D）
+- [Lockwiki](https://www.lockwiki.com/) — EN 1303（8 位码逐位、Digit 6 腐蚀温度 grade 0/A/B/C、Digit 7 key security grade 1–6 with differs/detainers、Digit 8 attack resistance grade 0~D）
 - UMAY Locks — BS EN 1303（抗钻分钟数、与 TS007 对比）
 - Master Key Systems — Euro Cylinder Locks Explained（TS007 1/2/3 星、snap 盲区）
 - Conquest Ironmongery — Technical Specification（8 位码、100,000 cycles、key security grade 6）
@@ -123,6 +123,8 @@ Digit 7 是钥匙安全（防复制，1–6 级），Digit 8 是攻击抵抗（�
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

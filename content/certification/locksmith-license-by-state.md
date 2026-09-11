@@ -101,7 +101,7 @@ description: "Locksmith license requirements by state: which U.S. states require
 
 ## Sources
 
-- ALOA（官方）— Advocacy（13 州清单 + IL 2029 sunset + Broward 取消 + NYC 变更）
+- [ALOA](https://www.aloa.org)（官方）— Advocacy（13 州清单 + IL 2029 sunset + Broward 取消 + NYC 变更）
 - Locksmith Ledger — Locksmith Licensing State-by-State Review（各州细则、时数、费用）
 - Connecticut General Assembly 2007 报告（州法规对照表）
 - BestKeySupply / BestLocksmith / VortechPro（第三方州清单，用于交叉验证分歧）
@@ -112,6 +112,8 @@ description: "Locksmith license requirements by state: which U.S. states require
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

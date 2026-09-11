@@ -99,14 +99,16 @@ NFPA 80 要求防火门上**每一个组件**（铰链、closer、锁具、exit 
 
 ## Sources
 
-- CDF Distributors — NFPA 80 Fire Door Requirements（self-closing §6.1.3 / self-latching §6.1.4、positive latch、label）
-- CDF Distributors — Fire-Rated Door Installation（roller latch 禁用、hold-open 装置、label 涂漆作废）
+- [CDF Distributors](https://www.cdfdistributors.com/) — NFPA 80 Fire Door Requirements（self-closing §6.1.3 / self-latching §6.1.4、positive latch、label）
+- [CDF Distributors](https://www.cdfdistributors.com/) — Fire-Rated Door Installation（roller latch 禁用、hold-open 装置、label 涂漆作废）
 - IBC/NFPA80 讲解 — Fire Exit vs Panic Hardware（mechanical dogging 禁止、检查失败清单）
 - DoorClosersUSA — Dogging on Panic Hardware（NFPA 80 §6.4.4.1 self-closing/latching）
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。本文为信息性内容，非法律/法规意见。
 
 ---
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

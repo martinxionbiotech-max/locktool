@@ -96,13 +96,15 @@ Fail-safe 断电时解锁（逃生门用），fail-secure 断电时保持锁（�
 
 ## Sources
 
-- Kisi — Electronic Locks Guide（electric strike/maglock、fail-safe/fail-secure、玻璃门限制）
+- [Kisi](https://www.getkisi.com/) — Electronic Locks Guide（electric strike/maglock、fail-safe/fail-secure、玻璃门限制）
 - Avigilon — Electric vs Magnetic Strike Locks（electric strike 原理、应用场景对比）
 - GenX Security — Electronic Door Locks 101（electrified handleset/strike/panic/maglock、12/24V、Lenel/S2/Kisi 等品牌）
 - Silver Star Protection — Commercial Access Control Glossary（凭证/读卡器/控制器/硬件分层）
 - ButterflyMX — 5 Types of Commercial Access Control（key fob/keypad/mobile/cloud/intercom）
 
 ---
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

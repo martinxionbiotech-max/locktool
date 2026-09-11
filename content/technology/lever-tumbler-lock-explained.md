@@ -103,13 +103,15 @@ Lever lock 由三组核心元件构成：
 ## Sources
 
 - Wikipedia — Lever tumbler lock（机制、false notches、curtain、双动原则）
-- Lockwiki — Lever（1778 Robert Barron 专利 BP1200、relocker、保险柜应用）
+- [Lockwiki](https://www.lockwiki.com/) — Lever（1778 Robert Barron 专利 BP1200、relocker、保险柜应用）
 - Firgelli Automations — Lever Tumbler Lock（BS3621、bolt throw 14mm/20mm、英国住宅市场）
 - LockPickWorld — Lever Locks Explained（lever vs pin tumbler 对照）
 
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

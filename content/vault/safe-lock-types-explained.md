@@ -103,7 +103,7 @@ Group 2 → 2M → 1 → 1R，由低到高。Group 1R 抗 X 光，是 DEA 合规
 
 ## Sources
 
-- Lockwiki — UL 768（Group 2/2M/1/1R、manipolation resistance、不测 forced entry）
+- [Lockwiki](https://www.lockwiki.com/) — UL 768（Group 2/2M/1/1R、manipolation resistance、不测 forced entry）
 - Safe & Vault Store — Mechanical vs Electronic vs Biometric（UL 768 四 Group、UL 2058 Type 1、ESD/RF 攻击向量）
 - Kcolefas — Safe Locks Definitive Guide（Group 分级、dialing tolerance、20 小时抗操作）
 - Dean Safe — Lock Logic（Group 2M 抗辐射、Group 1R acetal resin 抗 X 光、DEA）
@@ -112,6 +112,8 @@ Group 2 → 2M → 1 → 1R，由低到高。Group 1R 抗 X 光，是 DEA 合规
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
 
 ---
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

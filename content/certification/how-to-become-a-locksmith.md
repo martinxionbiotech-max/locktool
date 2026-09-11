@@ -100,8 +100,8 @@ description: "How to become a locksmith, step by step: license vs certification,
 
 ## Sources
 
-- ALOA（官方）— Certifications / Advocacy（13 州执照清单、IL 2029 sunset、认证层级）
-- Master Locksmiths Association（官方）— 培训课程、MLA Qualification、OFQUAL、英国零监管
+- [ALOA](https://www.aloa.org)（官方）— Certifications / Advocacy（13 州执照清单、IL 2029 sunset、认证层级）
+- [Master Locksmiths Association](https://www.locksmiths.co.uk/)（官方）— 培训课程、MLA Qualification、OFQUAL、英国零监管
 - Locksmith Ledger — Locksmith Licensing State-by-State Review（各州细则、时数）
 - HomeGuide — How to Become a Locksmith（职业路径、培训中心、专业化）
 - Digital Tradies — Locksmith Qualifications UK（City & Guilds 3017、DBS、5–10 天）
@@ -112,6 +112,8 @@ description: "How to become a locksmith, step by step: license vs certification,
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

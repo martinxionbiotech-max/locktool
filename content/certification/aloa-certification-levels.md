@@ -105,7 +105,7 @@ CRL 必考 + 2 选修；CPL 再 + 12 选修；CML 再 + 9 选修（覆盖 90%+ �
 
 ## Sources
 
-- ALOA（官方）— Certifications（PRP 36 科目、三级阶梯、专项轨道、AFL 非考试）
+- [ALOA](https://www.aloa.org)（官方）— Certifications（PRP 36 科目、三级阶梯、专项轨道、AFL 非考试）
 - LSA Michigan — ALOA Information（CRL/CPL/CML 具体科目数与及格线）
 - Findalocksmith — ALOA Certifications（CPS/CMST/CAL/CMAL/ICRL 等完整谱系）
 - Yankee Security（PDF）— Becoming a CML（考试累计路径、至少 3 次考试）
@@ -114,6 +114,8 @@ CRL 必考 + 2 选修；CPL 再 + 12 选修；CML 再 + 9 选修（覆盖 90%+ �
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 

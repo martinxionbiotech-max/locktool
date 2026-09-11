@@ -104,9 +104,9 @@ TS007 是英国星级标准，补 EN 1303 不测 snap（锁芯折断）的盲区
 ## Sources
 
 - BHMA — Product Grade Levels（Grade 1–3 定义、A156 系列）
-- Lockwiki — EN 1303 / UL 437（8 位码逐位解读、UL 437 攻击时长表、"不定义高安全"纠偏）
+- [Lockwiki](https://www.lockwiki.com/) — EN 1303 / UL 437（8 位码逐位解读、UL 437 攻击时长表、"不定义高安全"纠偏）
 - Super Arbor / PDQ / Iveise — ANSI/BHMA Grade 1/2/3 cycle/impact/load 阈值
-- ScienceDirect — High Security Standard（UL 437 攻击时长、pick 10min）
+- [ScienceDirect](https://www.sciencedirect.com/) — High Security Standard（UL 437 攻击时长、pick 10min）
 - Medeco（官方）— 高安全锁芯与 UL 437
 - Keyman Lock / UMAY / SDH — EN 1303 与 TS007 差距、8 位码
 
@@ -115,6 +115,8 @@ TS007 是英国星级标准，补 EN 1303 不测 snap（锁芯折断）的盲区
 ---
 
 > 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+
+> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
 
 ## 关联
 
