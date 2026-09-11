@@ -24,4 +24,4 @@ This is the closest hub to commerce: tool knowledge naturally links to product s
 ## Related Hubs
 
 - Lock Technology — which lock types each tool works on
-- Certification & Training — how professionals learn to use these tools
+- Standards & Compliance — how ANSI/BHMA, EN 1303 rate these mechanisms

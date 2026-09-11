@@ -4,116 +4,114 @@ description: "Lock pick gun explained: how snap guns and electric pick guns work
 ---
 # Lock Pick Gun Explained: How Snap Guns and Electric Pick Guns Differ from Manual Picking
 
-> 项目：Locktool · Content
-> 类型：Taxonomy Cluster（模板 A/B）
-> 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`https://locktool.com/entity/pick-gun#entity`、`https://locktool.com/entity/lock-pick#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> Project: Locktool · Content
+> Type: Taxonomy Cluster (Template A/B)
+> Hub: Tools & Equipment Hub (/tools/)
+> Primary entities: `https://locktool.com/entity/pick-gun#entity`, `https://locktool.com/entity/lock-pick#entity`
+> Status: DRAFT
+> Research date: 2026-09-11
 
 ---
 
 ## Direct Answer
 
-Lock Pick Gun（开锁枪，也称 snap gun / pick pistol）是一种用**能量传递**原理快速开锁的工具：一根细钢针插入钥匙道，触发时**同时猛击所有底部销钉**，动能传递到驱动销，让它们瞬间弹起穿过剪切线，配合扭力扳一旋转就开。
+A **lock pick gun** (also called a snap gun / pick pistol) is a tool that opens locks through **energy transfer**: a thin steel needle inserts into the keyway and, when triggered, **strikes all the bottom pins simultaneously**, transferring kinetic energy to the driver pins so they jump across the shear line — and a turn of the tension wrench opens the lock.
 
-它分两种：
+Two types:
 
-| 类型 | 动力 | 特点 |
+| Type | Power | Characteristic |
 |---|---|---|
-| **Manual Snap Gun（手动）** | 扣扳机、弹簧驱动单次"啪"一下 | 速度慢、需手动逐次触发 |
-| **Electric Pick Gun（EPG，电动）** | 电机驱动、连续快速震动 | 快、省力，工作锁匠标配 |
+| **Manual snap gun** | Trigger, spring-driven single "snap" | Slower, manual triggering per attempt |
+| **Electric pick gun (EPG)** | Motor-driven, continuous rapid vibration | Fast, low-effort, working-locksmith standard |
 
-**关键局限**：开锁枪**只对标准 pin tumbler 锁有效**，对 disc detainer、dimple、电子/智能锁无效。
+**Key limitation**: a pick gun **works only on standard pin tumbler locks** — not on disc detainer, dimple, or electronic/smart locks.
 
-> ⚠️ 合规提示：本内容仅作工具原理分类科普，不构成使用教学。工具持有与使用在多数司法辖区有法律限制（见本站 Legal Risk Matrix）。
-
----
-
-## 工作原理：为什么它能"瞬间开锁"
-
-普通手工撬锁是"逐根销钉试错"；开锁枪用的是**物理学的能量传递**：
-
-1. 钢针顶住所有底部销钉；
-2. 触发瞬间，针猛击——底部销钉（像台球的母球）把动能传给驱动销（像目标球）；
-3. 驱动销获得动能、弹起穿过剪切线，底部销钉留在原地；
-4. 此时施加的轻微扭力让内芯转动，锁开。
-
-这本质上是 **bump 开锁（key bumping）的自动化版本**——bump 靠手敲 key，开锁枪用弹簧/电机来做同一件事，更可控、更省力。
+> ⚠️ Compliance note: this content is tool-principle classification only, not usage instruction. Tool possession and use carry legal restrictions in most jurisdictions (see our Legal Risk Matrix).
 
 ---
 
-## 它的优点和短板（要诚实说）
+## How It Works: Why It Can "Open in an Instant"
 
-**优点**：
-- **快**——对低到中安全 pin tumbler 锁，通常几秒到几十秒。
-- **门槛低**——最初为美国警方设计，要求"无需长期训练即可非破坏开锁"。
+Manual picking is "trial-and-error, one pin at a time"; the pick gun uses **energy transfer from physics**:
 
-**短板**：
-- **只认 pin tumbler**——disc detainer、dimple、电子锁都不适用。
-- **更伤锁**——猛击比 rake（模拟钥匙运动）更容易损伤锁机构。Wikipedia 明确指出这一点。
-- **对安全销效果差**——装了 spool/serrated 销的锁，弹起后驱动销会卡在假位上，成功率大降。
-- **常需多次尝试**——不是一扣就开，往往要反复触发。
+1. The needle rests against all the bottom pins;
+2. On trigger, the needle strikes — the bottom pins (like a cue ball) transfer kinetic energy to the driver pins (like the target ball);
+3. The driver pins gain energy and jump across the shear line while the bottom pins stay in place;
+4. The light torque applied at that moment turns the plug — the lock opens.
+
+This is essentially **an automated version of key bumping** — bumping strikes with a hand-held key; the pick gun uses a spring/motor to do the same thing, more controllably and with less effort.
 
 ---
 
-## 它和几种常见手法的关系
+## Its Strengths and Weaknesses (Said Honestly)
 
-| 手法 | 原理 | 与开锁枪关系 |
+**Strengths**:
+- **Fast** — on low-to-medium security pin tumbler locks, usually seconds to tens of seconds.
+- **Low barrier** — originally designed for US police, requiring "non-destructive opening without long training."
+
+**Weaknesses**:
+- **Pin tumbler only** — disc detainer, dimple, and electronic locks don't apply.
+- **More damaging** — the strike is more damaging to the lock mechanism than raking (which simulates key movement). Wikipedia explicitly notes this.
+- **Weak against security pins** — on locks with spool/serrated pins, the driver pins catch on false positions after jumping, sharply lowering success.
+- **Often needs multiple attempts** — not a one-trigger open; usually requires repeated triggering.
+
+---
+
+## How It Relates to Common Techniques
+
+| Technique | Principle | Relationship to pick gun |
 |---|---|---|
-| 单针拨（SPP） | 逐销钉精确抬升 | 开锁枪的"慢速、精确"对照 |
-| Rake（扫动） | 快速扫拨多销钉 | 更接近钥匙自然运动，比开锁枪更不伤锁 |
-| Bump（撞击） | 手敲 special key | 开锁枪是它的自动化版本 |
+| Single-pin picking (SPP) | Lift pins one at a time, precisely | The pick gun's "slow, precise" contrast |
+| Raking | Quickly sweep multiple pins | Closer to natural key motion, less damaging than a pick gun |
+| Bumping | Strike a special key by hand | The pick gun is its automated version |
 
-关键认知：**开锁枪 = bump 的自动化**，它继承了 bump 的"快 + 伤锁 + 怕安全销"三件特性。
+Key insight: **pick gun = automated bumping**, inheriting bumping's "fast + damaging + weak against security pins" triplet.
 
 ---
 
 ## The Author's Take
 
-**我的判断：开锁枪是"快但糙"的工具，适合特定场景（执法/急救/大量低安全锁），但绝不是"高品质锁匠"的首选。** 三点：
+**My judgment: the pick gun is a "fast but rough" tool, suited to specific contexts (law enforcement / emergency / bulk low-security locks), but not a "high-quality locksmith's" first choice.** Three points:
 
-1. **它和"专业撬锁技术"是两回事**——开锁枪靠能量传递"碰运气"，单针拨靠手感"精确定位"。对高安全锁，前者失效，后者才是正道。
-2. **"伤锁"是要算进成本的真实代价**——猛击可能损伤锁机构。如果开的是客户的锁，这可能是不可接受的（locksport 练习锁无所谓，客户家门的锁就不能这么糙）。
-3. **它已被"工具进化"部分取代**——电动 EPG 是手动 snap gun 的升级，但真正的专业人士，对付高安全锁时，仍然回到单针拨 + 专用工具（如 Lishi）的路线。
+1. **It's a different thing from "professional picking technique"** — the pick gun relies on energy transfer and "getting lucky," while single-pin picking relies on feel and "precise positioning." Against high-security locks, the former fails and the latter is the correct path.
+2. **"Lock damage" is a real cost to factor in** — the strike can damage the lock mechanism. If you're opening a client's lock, that may be unacceptable (fine on locksport practice locks; not on a customer's front door).
+3. **It's been partly superseded by tool evolution** — the electric EPG upgrades the manual snap gun, but true professionals still return to single-pin picking + dedicated tools (like Lishi) for high-security locks.
 
-结论：**开锁枪值得备一把（尤其 EPG），但要认清它的能力边界——它是"低安全 pin tumbler 锁的快速非破坏工具"，不是"什么锁都能开的神器"。** 把开锁枪当万能，是新手最大的认知误区之一。
+Conclusion: **a pick gun is worth keeping (especially an EPG), but know its boundary — it's a "non-destructive fast tool for low-security pin tumbler locks," not a "opens-anything magic tool."** Treating it as universal is one of the biggest beginner misconceptions.
 
-（以上是基于开锁枪公开原理 + 锁匠行业共识的专业判断，非我方实测。）
+(This is professional judgment based on pick-gun public principles and locksmith industry consensus, not empirical testing.)
 
 ---
 
 ## FAQ
 
-**开锁枪能开所有锁吗？**
-不能。只对标准 pin tumbler 锁有效，disc detainer、dimple、电子/智能锁都无效。
+**Can a pick gun open all locks?**
+No. It works only on standard pin tumbler locks — disc detainer, dimple, and electronic/smart locks don't apply.
 
-**手动和电动开锁枪有什么区别？**
-手动靠扣扳机单次触发，电动（EPG）电机驱动连续震动，更快更省力。
+**What's the difference between manual and electric pick guns?**
+Manual triggers once per pull; electric (EPG) is motor-driven continuous vibration — faster and lower-effort.
 
-**开锁枪和 bump 开锁有什么关系？**
-开锁枪本质是 bump 开锁的自动化版本，用弹簧/电机代替手敲。
+**How does a pick gun relate to bumping?**
+A pick gun is essentially an automated version of bumping, using a spring/motor instead of hand strikes.
 
-**开锁枪会伤锁吗？**
-会，且比 rake 更容易损伤锁机构（猛击 vs 模拟钥匙运动）。
+**Does a pick gun damage locks?**
+Yes, and more than raking (striking vs. simulated key movement).
 
 ---
 
 ## Sources
 
-- LockPickWorld — Lock Pick Guns（EPG/manual snap gun、只适用 pin tumbler、不适用 disc detainer/dimple/smart）
-- Wikipedia — Snap gun（能量传递原理、比 rake 更伤锁、bump 自动化）
-- Lockpicks.com — How to Use a Lock Pick Gun（手动/电动、Schlage/Kwikset/Weiser 适用）
+- LockPickWorld — Lock Pick Guns (EPG/manual snap gun, pin tumbler only, not disc detainer/dimple/smart)
+- Wikipedia — Snap gun (energy-transfer principle, more damaging than raking, bumping automation)
+- Lockpicks.com — How to Use a Lock Pick Gun (manual/electric, Schlage/Kwikset/Weiser applicability)
 
----
+> Data labeling: key figures above are marked `[F]` (source fact) or `[D]` (industry-derived/experience). Anything in the Author's Take is our own inference, explicitly labeled as professional judgment rather than source fact.
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+> Research date: 2026-09-11 · Accessed: 2026-09-11. Sources are third-party authorities and manufacturer public material, not our own testing. Regulatory information may become outdated; always verify current local requirements before acting.
 
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+## Related
 
-## 关联
-
-- → Locksmith Tool Taxonomy（Pillar）
-- → Lock Pick Types Explained（单针拨/rake 对照）
-- → Pin Tumbler Lock Explained（为啥只对 pin tumbler 有效）
-- → Entity：`https://locktool.com/entity/pick-gun#entity` / `https://locktool.com/entity/lock-pick#entity`
+- → Locksmith Tool Taxonomy (Pillar)
+- → Lock Pick Types Explained (single-pin picking / raking contrast)
+- → Pin Tumbler Lock Explained (why it only works on pin tumbler)
+- → Entities: `https://locktool.com/entity/pick-gun#entity` / `https://locktool.com/entity/lock-pick#entity`
