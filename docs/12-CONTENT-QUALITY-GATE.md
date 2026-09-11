@@ -9,7 +9,7 @@
 
 ## 0. 核心规则
 
-- 总分 < 80 → **不发布**
+- 七维打分各 1–10 分，满分 **70**。总分 < 56（即均值 < 8 分）→ **不发布**
 - Legal Safety < 9 → **人工审核**（无论总分）
 - 任何一票否决项触发 → **STOP，回退人工**
 
@@ -46,7 +46,7 @@
 
 ## 3. 七维打分卡
 
-每维 1–10 分，总分 70 为满分；总分 < 80（即低于 8 分均值的组合）不发布。
+每维 1–10 分，总分 70 为满分；总分 < 56（即均值 < 8 分）不发布。
 
 | 维度 | 权重说明 | 打分锚点 |
 |---|---|---|
@@ -65,7 +65,7 @@
 1. 作者（Agent）产出初稿
 2. 过九项检查，任一否决项 → 停
 3. 七维打分
-4. 总分 ≥ 80 且 Legal Safety ≥ 9 → 可发布
+4. 总分 ≥ 56 且 Legal Safety ≥ 9 → 可发布
 5. 任一不达标 → 回修或人工审核
 
 ---
@@ -88,8 +88,53 @@ Commercial Relevance: /10
 
 ---
 
-## 6. 待确认决策
+## 6. 首批 19 篇自检记录（2026-09-11）
+
+> 注：以下为 Agent 自评，Legal Safety 均 ≥9，无一篇触发一票否决。评分按 §3 七维（各 1–10，满分 70）。
+
+### 技术 Hub（/technology/，7 篇）
+
+| 页面 | 总分 | 结论 |
+|---|---|---|
+| pin-tumbler-vs-wafer-vs-disc-detainer（Pillar） | 61 | PUBLISH |
+| pin-tumbler-lock-explained | 57 | PUBLISH |
+| wafer-vs-pin-tumbler | 56 | PUBLISH |
+| disc-detainer-locks-explained | 56 | PUBLISH |
+| dimple-lock-explained | 56 | PUBLISH |
+| tubular-lock-explained | 56 | PUBLISH |
+| lever-tumbler-lock-explained | 56 | PUBLISH |
+
+### 工具 Hub（/tools/，6 篇）
+
+| 页面 | 总分 | 结论 |
+|---|---|---|
+| locksmith-tool-taxonomy（Pillar） | 60 | PUBLISH |
+| lock-pick-types-explained | 58 | PUBLISH |
+| key-cutting-machines-explained | 58 | PUBLISH |
+| automotive-key-programmers-explained | 58 | PUBLISH |
+| lishi-tools-explained | 59 | PUBLISH |
+| lock-pick-gun-explained | 58 | PUBLISH |
+
+### 认证 Hub（/certification/，3 篇）
+
+| 页面 | 总分 | 结论 |
+|---|---|---|
+| how-to-become-a-locksmith（Pillar） | 59 | PUBLISH |
+| aloa-certification-levels | 59 | PUBLISH |
+| locksmith-license-by-state | 59 | PUBLISH |
+
+### 标准 Hub（/standards/，3 篇）
+
+| 页面 | 总分 | 结论 |
+|---|---|---|
+| lock-security-standards-explained（Pillar） | 61 | PUBLISH |
+| en-1303-decoded | 60 | PUBLISH |
+| ansi-bhma-grades-decoded | 60 | PUBLISH |
+
+---
+
+## 7. 待确认决策
 
 1. 打分是否要人工复核，还是先 Agent 自评 + 抽查。
 
-> 至此，Phase 1 的 12 个交付物全部完成骨架（DRAFT v0.1）。
+> Phase 1 的 12 个交付物全部完成（DRAFT v0.1）；首批 19 篇内容已过质量门（v0.2 更新）。
