@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Technical Explanation Cluster（模板 B）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#disc-detainer`、`#lock`
+> 主实体：`https://locktool.com/entity/disc-detainer#entity`、`https://locktool.com/entity/lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -102,4 +102,4 @@ Abloy Protec2 有约 **1.97 亿**组合（官方数据），配合专利保护�
 
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
 - → Pin Tumbler Lock 原理深度解析
-- → Entity：`#disc-detainer` / `#lock`
+- → Entity：`https://locktool.com/entity/disc-detainer#entity` / `https://locktool.com/entity/lock#entity`

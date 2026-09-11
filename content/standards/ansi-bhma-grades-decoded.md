@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Standards Cluster（模板 B/E）
 > 所属 Hub：Standards & Compliance Hub（/standards/）
-> 主实体：`#ansi-bhma`、`#door-lock`
+> 主实体：`https://locktool.com/entity/ansi-bhma#entity`、`https://locktool.com/entity/door-lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -110,4 +110,4 @@ Grade 1 最高（商用/机构），Grade 3 最低（住宅）。排序 Grade 1 
 - → Lock Security Standards Explained（Pillar）
 - → EN 1303 Decoded（欧标对照）
 - → Pin Tumbler Lock Explained（security pins 抗撬，Grade 不测的维度）
-- → Entity：`#ansi-bhma` / `#door-lock`
+- → Entity：`https://locktool.com/entity/ansi-bhma#entity` / `https://locktool.com/entity/door-lock#entity`

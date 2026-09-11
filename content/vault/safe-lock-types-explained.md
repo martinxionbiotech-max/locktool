@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Comparison Pillar（模板 A/C）
 > 所属 Hub：Vault & Safe Hub（/vault/）
-> 主实体：`#safe-lock`、`#ul-768`、`#combination-lock`
+> 主实体：`https://locktool.com/entity/safe-lock#entity`、`https://locktool.com/entity/ul-768#entity`、`https://locktool.com/entity/combination-lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -112,4 +112,4 @@ Group 2 → 2M → 1 → 1R，由低到高。Group 1R 抗 X 光，是 DEA 合规
 ## 关联
 
 - → Lock Security Standards Explained（标准总览）
-- → Entity：`#safe-lock` / `#ul-768` / `#combination-lock`
+- → Entity：`https://locktool.com/entity/safe-lock#entity` / `https://locktool.com/entity/ul-768#entity` / `https://locktool.com/entity/combination-lock#entity`

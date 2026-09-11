@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Comparison Cluster（模板 A/C）
 > 所属 Hub：Access Control Hub（/access-control/）
-> 主实体：`#electric-strike`、`#maglock`
+> 主实体：`https://locktool.com/entity/electric-strike#entity`、`https://locktool.com/entity/maglock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -105,4 +105,4 @@ Maglock 是"断电才开"的失效安全设计，但当有人从**内部**要出
 ## 关联
 
 - → Electronic Access Control Explained（Pillar）
-- → Entity：`#electric-strike` / `#maglock`
+- → Entity：`https://locktool.com/entity/electric-strike#entity` / `https://locktool.com/entity/maglock#entity`

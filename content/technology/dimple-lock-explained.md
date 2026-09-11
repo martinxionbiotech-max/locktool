@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Technical Explanation Cluster（模板 B）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#dimple-lock`、`#lock`
+> 主实体：`https://locktool.com/entity/dimple-lock#entity`、`https://locktool.com/entity/lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -85,4 +85,4 @@ DHF + Glass & Glazing Federation 制定的评级。1 星基础防撬；3 星抗�
 
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
 - → Pin Tumbler Lock Explained
-- → Entity：`#dimple-lock` / `#lock`
+- → Entity：`https://locktool.com/entity/dimple-lock#entity` / `https://locktool.com/entity/lock#entity`

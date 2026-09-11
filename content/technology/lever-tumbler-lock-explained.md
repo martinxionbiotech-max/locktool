@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Technical Explanation Cluster（模板 B）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#lever-lock`、`#lock`
+> 主实体：`https://locktool.com/entity/lever-lock#entity`、`https://locktool.com/entity/lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -110,4 +110,4 @@ Lever lock 由三组核心元件构成：
 ## 关联
 
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
-- → Entity：`#lever-lock` / `#lock`
+- → Entity：`https://locktool.com/entity/lever-lock#entity` / `https://locktool.com/entity/lock#entity`

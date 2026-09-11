@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Standards Pillar（模板 B/E）
 > 所属 Hub：Standards & Compliance Hub（/standards/）
-> 主实体：`#lock-standard`、`#ansi-bhma`、`#en-1303`、`#ul-437`
+> 主实体：`https://locktool.com/entity/lock-standard#entity`、`https://locktool.com/entity/ansi-bhma#entity`、`https://locktool.com/entity/en-1303#entity`、`https://locktool.com/entity/ul-437#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -117,4 +117,4 @@ TS007 是英国星级标准，补 EN 1303 不测 snap（锁芯折断）的盲区
 - → EN 1303 8-Digit Code Decoded（Cluster）
 - → ANSI/BHMA Grade 1/2/3 Decoded（Cluster）
 - → 锁型机制（Pin Tumbler / Disc Detainer 等）
-- → Entity：`#lock-standard` / `#ansi-bhma` / `#en-1303` / `#ul-437`
+- → Entity：`https://locktool.com/entity/lock-standard#entity` / `https://locktool.com/entity/ansi-bhma#entity` / `https://locktool.com/entity/en-1303#entity` / `https://locktool.com/entity/ul-437#entity`

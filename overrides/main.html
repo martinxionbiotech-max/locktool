@@ -24,4 +24,31 @@
     ]
   }
   </script>
+  {% if page and page.title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "@id": "{{ config.site_url | trim('/') }}/{{ page.url }}#article",
+    "headline": "{{ page.title | e }}",
+    "url": "{{ config.site_url | trim('/') }}/{{ page.url }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ config.site_url | trim('/') }}/{{ page.url }}"
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://locktool.com/#org"
+    },
+    "publisher": {
+      "@id": "https://locktool.com/#org"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://locktool.com/#website"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  {% endif %}
 {% endblock %}

@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Standards Cluster（模板 B/E）
 > 所属 Hub：Standards & Compliance Hub（/standards/）
-> 主实体：`#en-1303`、`#euro-cylinder`
+> 主实体：`https://locktool.com/entity/en-1303#entity`、`https://locktool.com/entity/euro-cylinder#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -125,4 +125,4 @@ Digit 7 是钥匙安全（防复制，1–6 级），Digit 8 是攻击抵抗（�
 - → Lock Security Standards Explained（Pillar）
 - → ANSI/BHMA Grade Decoded
 - → Dimple Lock Explained（Euro cylinder 语境）
-- → Entity：`#en-1303` / `#euro-cylinder`
+- → Entity：`https://locktool.com/entity/en-1303#entity` / `https://locktool.com/entity/euro-cylinder#entity`

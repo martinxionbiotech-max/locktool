@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Pathway Cluster（模板 E）
 > 所属 Hub：Certification & Training Hub（/certification/）
-> 主实体：`#training`、`#apprenticeship`
+> 主实体：`https://locktool.com/entity/training#entity`、`https://locktool.com/entity/apprenticeship#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -106,4 +106,4 @@
 
 - → How to Become a Locksmith（Pillar）
 - → Locksmith License by State（执照门门槛 + 背景审查）
-- → Entity：`#training` / `#apprenticeship`
+- → Entity：`https://locktool.com/entity/training#entity` / `https://locktool.com/entity/apprenticeship#entity`

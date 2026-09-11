@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Vault Cluster（模板 G）
 > 所属 Hub：Vault & Safe Hub（/vault/）
-> 主实体：`#safe-lock`、`#mechanical-lock`、`#electronic-lock`
+> 主实体：`https://locktool.com/entity/safe-lock#entity`、`https://locktool.com/entity/mechanical-lock#entity`、`https://locktool.com/entity/electronic-lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -117,4 +117,4 @@ UL 768 最高机械等级，唯一满足 DEA 对 I/II 类管制物质的合规�
 
 - → Safe Lock Types Explained（Pillar）
 - → Safe Burglary Ratings Decoded（UL 687 柜体评级 vs UL 768 锁评级）
-- → Entity：`#safe-lock` / `#mechanical-lock` / `#electronic-lock`
+- → Entity：`https://locktool.com/entity/safe-lock#entity` / `https://locktool.com/entity/mechanical-lock#entity` / `https://locktool.com/entity/electronic-lock#entity`

@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Pillar（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#locksmith-tool`、`#tool-taxonomy`
+> 主实体：`https://locktool.com/entity/locksmith-tool#entity`、`https://locktool.com/entity/tool-taxonomy#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -121,4 +121,4 @@ tension wrench（扭力扳）——大众常误以为 pick 是核心，其实扭
 - → Lock Pick Types Explained（撬锁工具类型，Cluster）
 - → Key Cutting Machines Explained（配钥机类型，Cluster）
 - → 锁型机制（Pin Tumbler / Wafer / Disc Detainer 等，/technology/）
-- → Entity：`#locksmith-tool` / `#tool-taxonomy`
+- → Entity：`https://locktool.com/entity/locksmith-tool#entity` / `https://locktool.com/entity/tool-taxonomy#entity`

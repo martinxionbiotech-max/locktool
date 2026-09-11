@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Access Control Cluster（模板 G）
 > 所属 Hub：Access Control Hub（/access-control/）
-> 主实体：`#credential`、`#prox-card`、`#smart-card`、`#wiegand`
+> 主实体：`https://locktool.com/entity/credential#entity`、`https://locktool.com/entity/prox-card#entity`、`https://locktool.com/entity/smart-card#entity`、`https://locktool.com/entity/wiegand#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -123,4 +123,4 @@ Prox（125kHz）未加密、可克隆；智能卡（13.56MHz）有加密、reade
 
 - → Electronic Access Control Explained（Pillar，含 credential→reader→controller→lock 全栈）
 - → Electric Strike vs Maglock（凭证验证后的物理执行层）
-- → Entity：`#credential` / `#prox-card` / `#smart-card` / `#wiegand`
+- → Entity：`https://locktool.com/entity/credential#entity` / `https://locktool.com/entity/prox-card#entity` / `https://locktool.com/entity/smart-card#entity` / `https://locktool.com/entity/wiegand#entity`

@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Cluster（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#key-programmer`、`#transponder-key`、`#automotive-locksmith`
+> 主实体：`https://locktool.com/entity/key-programmer#entity`、`https://locktool.com/entity/transponder-key#entity`、`https://locktool.com/entity/automotive-locksmith#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -108,4 +108,4 @@
 - → Locksmith Tool Taxonomy（Pillar）
 - → Key Cutting Machines Explained（配钥机，机械齿形侧）
 - → Lishi Tools Explained（汽车开门 + 解码）
-- → Entity：`#key-programmer` / `#automotive-locksmith`
+- → Entity：`https://locktool.com/entity/key-programmer#entity` / `https://locktool.com/entity/automotive-locksmith#entity`

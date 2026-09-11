@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Career Guide Pillar（模板 I）
 > 所属 Hub：Certification & Training Hub（/certification/）
-> 主实体：`#locksmith-career`、`#locksmith-license`
+> 主实体：`https://locktool.com/entity/locksmith-career#entity`、`https://locktool.com/entity/locksmith-license#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 > 合规声明：本文为信息性职业路径说明，**不构成法律意见**。执照与培训要求随司法辖区和法规变动，务必以当地政府/监管机构的最新规定为准。
@@ -114,4 +114,4 @@
 - → ALOA Certification Levels Explained（Cluster）
 - → Locksmith License by State（Cluster）
 - → Locksmith Tool Taxonomy
-- → Entity：`#locksmith-career` / `#locksmith-license` / `#aloa` / `#mla`
+- → Entity：`https://locktool.com/entity/locksmith-career#entity` / `https://locktool.com/entity/locksmith-license#entity` / `https://locktool.com/entity/aloa#entity` / `https://locktool.com/entity/mla#entity`

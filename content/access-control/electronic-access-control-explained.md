@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Pillar（模板 A/B）
 > 所属 Hub：Access Control Hub（/access-control/）
-> 主实体：`#electronic-lock`、`#electric-strike`、`#maglock`
+> 主实体：`https://locktool.com/entity/electronic-lock#entity`、`https://locktool.com/entity/electric-strike#entity`、`https://locktool.com/entity/maglock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -104,4 +104,4 @@ Fail-safe 断电时解锁（逃生门用），fail-secure 断电时保持锁（�
 
 - → Lock Security Standards Explained（标准总览）
 - → Automotive Key Programmers Explained（电子/芯片锁的另一维度）
-- → Entity：`#electronic-lock` / `#electric-strike` / `#maglock`
+- → Entity：`https://locktool.com/entity/electronic-lock#entity` / `https://locktool.com/entity/electric-strike#entity` / `https://locktool.com/entity/maglock#entity`

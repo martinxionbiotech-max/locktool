@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Comparison Cluster（模板 C）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#wafer`、`#pin-tumbler`
+> 主实体：`https://locktool.com/entity/wafer#entity`、`https://locktool.com/entity/pin-tumbler#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -92,4 +92,4 @@ Wafer lock（叶片锁）和 pin tumbler lock（弹子锁）都用"挡住内芯�
 
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
 - → Pin Tumbler Lock 原理深度解析
-- → Entity：`#wafer` / `#pin-tumbler`
+- → Entity：`https://locktool.com/entity/wafer#entity` / `https://locktool.com/entity/pin-tumbler#entity`

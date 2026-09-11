@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Cluster（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#lock-pick`、`#tension-wrench`
+> 主实体：`https://locktool.com/entity/lock-pick#entity`、`https://locktool.com/entity/tension-wrench#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -123,4 +123,4 @@ TOK 卡在钥匙道顶端（稳定、反馈好），BOK 卡在底端（最常见
 - → Locksmith Tool Taxonomy（Pillar）
 - → Key Cutting Machines Explained
 - → 锁型机制（Pin Tumbler / Wafer 对应 hook / ball 场景）
-- → Entity：`#lock-pick` / `#tension-wrench`
+- → Entity：`https://locktool.com/entity/lock-pick#entity` / `https://locktool.com/entity/tension-wrench#entity`

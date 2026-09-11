@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Certification Cluster（模板 I）
 > 所属 Hub：Certification & Training Hub（/certification/）
-> 主实体：`#aloa`、`#locksmith-certification`
+> 主实体：`https://locktool.com/entity/aloa#entity`、`https://locktool.com/entity/locksmith-certification#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -115,4 +115,4 @@ CRL 必考 + 2 选修；CPL 再 + 12 选修；CML 再 + 9 选修（覆盖 90%+ �
 
 - → How to Become a Locksmith（Pillar）
 - → Locksmith License by State
-- → Entity：`#aloa` / `#locksmith-certification`
+- → Entity：`https://locktool.com/entity/aloa#entity` / `https://locktool.com/entity/locksmith-certification#entity`

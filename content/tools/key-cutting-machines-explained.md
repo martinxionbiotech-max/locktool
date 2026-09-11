@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Cluster（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#key-cutting-machine`、`#key-blank`
+> 主实体：`https://locktool.com/entity/key-cutting-machine#entity`、`https://locktool.com/entity/key-blank#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -106,4 +106,4 @@
 
 - → Locksmith Tool Taxonomy（Pillar）
 - → Lock Pick Types Explained
-- → Entity：`#key-cutting-machine` / `#key-blank`
+- → Entity：`https://locktool.com/entity/key-cutting-machine#entity` / `https://locktool.com/entity/key-blank#entity`

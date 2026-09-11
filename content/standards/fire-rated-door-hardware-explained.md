@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Standards Cluster（模板 G）
 > 所属 Hub：Standards & Compliance Hub（/standards/）
-> 主实体：`#nfpa-80`、`#fire-door`、`#fire-exit-hardware`
+> 主实体：`https://locktool.com/entity/nfpa-80#entity`、`https://locktool.com/entity/fire-door#entity`、`https://locktool.com/entity/fire-exit-hardware#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -108,4 +108,4 @@ NFPA 80 要求防火门上**每一个组件**（铰链、closer、锁具、exit 
 
 - → Lock Security Standards Explained（Pillar）
 - → Electronic Access Control Explained（fire door 与 fail-safe 逃生关联）
-- → Entity：`#nfpa-80` / `#fire-door` / `#fire-exit-hardware`
+- → Entity：`https://locktool.com/entity/nfpa-80#entity` / `https://locktool.com/entity/fire-door#entity` / `https://locktool.com/entity/fire-exit-hardware#entity`

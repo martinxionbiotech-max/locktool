@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Standards Cluster（模板 B/E）
 > 所属 Hub：Vault & Safe Hub（/vault/）
-> 主实体：`#ul-687`、`#safe-rating`、`#tl-15`、`#tl-30`
+> 主实体：`https://locktool.com/entity/ul-687#entity`、`https://locktool.com/entity/safe-rating#entity`、`https://locktool.com/entity/tl-15#entity`、`https://locktool.com/entity/tl-30#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -111,4 +111,4 @@ UL RSC 是枪柜合理入门门槛（门 3/16 钢 + 12 gauge 柜体 + Group 2/Ty
 
 - → Safe Lock Types Explained（Pillar，锁的 UL 768 等级）
 - → Lock Security Standards Explained（标准总览）
-- → Entity：`#ul-687` / `#safe-rating` / `#tl-15` / `#tl-30`
+- → Entity：`https://locktool.com/entity/ul-687#entity` / `https://locktool.com/entity/safe-rating#entity` / `https://locktool.com/entity/tl-15#entity` / `https://locktool.com/entity/tl-30#entity`

@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Licensing Cluster（模板 I）
 > 所属 Hub：Certification & Training Hub（/certification/）
-> 主实体：`#locksmith-license`、`#state-regulation`
+> 主实体：`https://locktool.com/entity/locksmith-license#entity`、`https://locktool.com/entity/state-regulation#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 > 合规声明：本文为信息性法规概览，**不构成法律意见**。州执照要求持续变动，执业前务必以州监管机构最新规定为准。
@@ -113,4 +113,4 @@
 
 - → How to Become a Locksmith（Pillar）
 - → ALOA Certification Levels Explained
-- → Entity：`#locksmith-license` / `#state-regulation`
+- → Entity：`https://locktool.com/entity/locksmith-license#entity` / `https://locktool.com/entity/state-regulation#entity`

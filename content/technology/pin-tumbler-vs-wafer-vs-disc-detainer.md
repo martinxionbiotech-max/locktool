@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Comparison Pillar（模板 C + B）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#lock`、`#pin-tumbler`、`#wafer`、`#disc-detainer`
+> 主实体：`https://locktool.com/entity/lock#entity`、`https://locktool.com/entity/pin-tumbler#entity`、`https://locktool.com/entity/wafer#entity`、`https://locktool.com/entity/disc-detainer#entity`
 > 状态：DRAFT（待上线，URL 暂未绑定）
 > 作者：Locktool Editorial（署名待定，见 Phase 1 阻塞项）
 > 研究日期：2026-09-11 · 信源层级：Tier 1（Abloy 官方 / ScienceDirect / Wikipedia）+ Tier 2（锁匠行业权威）
@@ -136,4 +136,4 @@ Bump 开锁依赖"撞动销钉让 driver pin 弹起瞬间对齐剪切线"。disc
 - → 下一篇：Pin Tumbler Lock 原理深度解析（Cluster）
 - → Wafer Lock vs Pin Tumbler（细粒度对比，Cluster）
 - → Disc Detainer 高安全原理（Cluster）
-- → Entity：`#pin-tumbler` / `#wafer` / `#disc-detainer` / `#lock`
+- → Entity：`https://locktool.com/entity/pin-tumbler#entity` / `https://locktool.com/entity/wafer#entity` / `https://locktool.com/entity/disc-detainer#entity` / `https://locktool.com/entity/lock#entity`

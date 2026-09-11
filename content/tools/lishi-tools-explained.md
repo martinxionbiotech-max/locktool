@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Cluster（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#lishi-tool`、`#automotive-locksmith`
+> 主实体：`https://locktool.com/entity/lishi-tool#entity`、`https://locktool.com/entity/automotive-locksmith#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -101,4 +101,4 @@ keyway 匹配的 2 合 1 工具，把拨片和解码器做在一起，边开锁�
 - → Locksmith Tool Taxonomy（Pillar）
 - → Automotive Key Programmers Explained（配钥 + 编程完整链路）
 - → Lock Pick Types Explained（普通 pick vs Lishi）
-- → Entity：`#lishi-tool` / `#automotive-locksmith`
+- → Entity：`https://locktool.com/entity/lishi-tool#entity` / `https://locktool.com/entity/automotive-locksmith#entity`

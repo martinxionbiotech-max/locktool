@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Technical Explanation Cluster（模板 B）
 > 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`#pin-tumbler`、`#lock`
+> 主实体：`https://locktool.com/entity/pin-tumbler#entity`、`https://locktool.com/entity/lock#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -120,4 +120,4 @@ spool/serrated/mushroom 等特殊形状的销钉，通过制造 false set 让撬
 - → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
 - → Wafer vs Pin Tumbler
 - → Disc Detainer Locks Explained
-- → Entity：`#pin-tumbler` / `#lock`
+- → Entity：`https://locktool.com/entity/pin-tumbler#entity` / `https://locktool.com/entity/lock#entity`

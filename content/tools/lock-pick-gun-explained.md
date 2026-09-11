@@ -3,7 +3,7 @@
 > 项目：Locktool · Content
 > 类型：Taxonomy Cluster（模板 A/B）
 > 所属 Hub：Tools & Equipment Hub（/tools/）
-> 主实体：`#pick-gun`、`#lock-pick`
+> 主实体：`https://locktool.com/entity/pick-gun#entity`、`https://locktool.com/entity/lock-pick#entity`
 > 状态：DRAFT
 > 研究日期：2026-09-11
 
@@ -110,4 +110,4 @@ Lock Pick Gun（开锁枪，也称 snap gun / pick pistol）是一种用**能量
 - → Locksmith Tool Taxonomy（Pillar）
 - → Lock Pick Types Explained（单针拨/rake 对照）
 - → Pin Tumbler Lock Explained（为啥只对 pin tumbler 有效）
-- → Entity：`#pick-gun` / `#lock-pick`
+- → Entity：`https://locktool.com/entity/pick-gun#entity` / `https://locktool.com/entity/lock-pick#entity`
