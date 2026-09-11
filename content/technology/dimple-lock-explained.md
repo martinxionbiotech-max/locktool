@@ -4,91 +4,89 @@ description: "Dimple lock explained: how the side-pinned pin tumbler mechanism w
 ---
 # Dimple Lock Explained: How Side-Pinned Pin Tumblers Work and Where They Sit on the Security Ladder
 
-> 项目：Locktool · Content
-> 类型：Technical Explanation Cluster（模板 B）
-> 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`https://locktool.com/entity/dimple-lock#entity`、`https://locktool.com/entity/lock#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> Project: Locktool · Content
+> Type: Technical Explanation Cluster (Template B)
+> Hub: Lock Technology Hub (/technology/)
+> Primary entities: `https://locktool.com/entity/dimple-lock#entity`, `https://locktool.com/entity/lock#entity`
+> Status: DRAFT
+> Research date: 2026-09-11
 
 ---
 
 ## Direct Answer
 
-Dimple lock（点孔锁 / 珠窝锁）本质上是**弹子锁的一个变种**——它用的还是弹簧销钉 + 剪切线，区别在于**销钉从钥匙的"平面"进入，而不是从边缘进入**。
+A **dimple lock** is essentially a **variant of the pin tumbler lock** — it still uses spring pins and a shear line, but the pins are driven from the **flat face of the key rather than its edge**.
 
-钥匙插入后转 90°，用**钥匙叶片的平面**（而非边缘齿）作为驱动面，充满凸起/凹陷的牙花顶着销钉。因为牙花分布在平面上，可以做得更密集、支撑侧销（side pin）和更多维度，所以整体**抗撬性高于普通边缘弹子锁**，安全上限落在"中等到高"区间。
+The key inserts and rotates 90°, using the **flat of the key blade** (not the edge teeth) as the driving surface, with a pattern of bumps/dimples pressing the pins. Because the cuts sit on a flat plane, they can be packed more densely and support **side pins** and extra dimensions, so dimple locks are generally **more pick-resistant than ordinary edge-cut pin tumblers**, sitting in the "medium to high" security band.
 
-它最常见的应用场景是**欧洲 Euro cylinder（欧标锁芯）**和高安保挂锁。
-
----
-
-## 机制：从"边缘齿"到"平面牙花"
-
-普通弹子锁：钥匙是扁平刀刃，**边缘齿**顶起销钉，销钉沿钥匙边缘方向排列。
-
-Dimple lock：钥匙同样是扁平的，但**牙花打在平面（flat face）上**——凸起或凹陷的小圆点/槽，插入后旋转 90° 让这些牙花去顶侧向布置的销钉。
-
-因为平面可以承载的牙花数量更多、排列更自由，dimple lock 通常能容纳：
-- 更多销钉（高端 Euro cylinder 可到 11 pin）
-- 侧销（side pins）/侧杆（sidebar），增加二维防护
-- 更复杂的 keyway，限制工具进入角度
-
-所以 dimple lock 往往比同销钉数的边缘弹子锁更难撬，且需要**专用 dimple pick**，普通 hook/rake 不适用。
+The most common application is the **Euro cylinder** and high-security padlocks.
 
 ---
 
-## 安全等级 & 星级体系（Euro Cylinder 语境）
+## Mechanism: From "Edge Teeth" to "Flat-Face Cuts"
 
-Dimple lock 大量用于 Euro cylinder，而 Euro cylinder 有一套由 **DHF（Door & Hardware Federation）与 Glass & Glazing Federation** 制定的 **1–3 星评级**：
+An ordinary pin tumbler drives pins from the key's **edge teeth**, with pins aligned along the key edge.
 
-| 星级 | 典型配置 | 抗攻能力 |
+A dimple lock's key is also flat, but its **cuts are on the flat face** — little bumps or dimples that, after a 90° rotation, press against **side-mounted pins**.
+
+Because a flat face can carry more cuts in freer arrangements, dimple locks typically accommodate:
+- More pins (high-end Euro cylinders can reach 11 pins)
+- **Side pins** / **sidebars**, adding a second dimension of defense
+- More complex keyways, restricting tool entry angles
+
+Dimple locks are therefore often harder to pick than an edge-cut pin tumbler with the same pin count, and require **dedicated dimple picks** — ordinary hooks/rakes don't fit.
+
+---
+
+## Security Grades & the Star System (Euro Cylinder Context)
+
+Dimple locks appear heavily in Euro cylinders, which carry a **1–3 star rating** maintained by the **DHF (Door & Hardware Federation) and the Glass & Glazing Federation**:
+
+| Star rating | Typical configuration | Attack resistance |
 |---|---|---|
-| 1 星 | 6 pin | 基础防撬，但易受 bump / snap（锁芯折断）攻击 |
-| 3 星 | 11 pin + 抗 snap/抗 bump/抗钻 | 抗撬、抗钻、抗拔、抗 bump、抗 snap，Secure by Design 认证 |
+| 1-star | 6 pins | Basic pick resistance, but vulnerable to bump / snap (cylinder snapping) attacks |
+| 3-star | 11 pins + anti-snap / anti-bump / anti-drill | Resists picking, drilling, extraction, bumping, and snapping; Secure by Design certified |
 
-**关键提醒**：Euro cylinder（欧标锁芯）的**最大弱点不在销钉机制，而在"锁芯折断（lock snapping）"**——通过暴力掰断锁芯暴露内部机构。这是 1 星低安全 Euro cylinder 最常见的被攻击方式，3 星 cylinder 通过抗 snap 设计解决。
+**Key note**: the Euro cylinder's **greatest weakness is not the pin mechanism but "lock snapping"** — violently breaking the cylinder to expose the internal mechanism. This is the most common attack on 1-star low-security Euro cylinders, and 3-star cylinders solve it with anti-snap designs.
 
 ---
 
 ## The Author's Take
 
-**我的判断：dimple lock 是"弹子锁家族的进阶分支"，它的价值在于用平面牙花换来了更高的销钉密度和侧销维度，但它不是一种全新的安全范式。** 如果你要的是"比普通门锁更抗撬、但还在弹子锁体系内"，dimple 是合适的选择；但它仍受 bump / snap 等攻击的威胁，需要靠星级体系里的抗 snap/抗 bump 设计来补足，而不是靠"它是 dimple"本身。
+**My judgment: the dimple lock is "an advanced branch of the pin tumbler family" — its value is trading a flat-face cut for higher pin density and side-pin dimensionality, but it is not a fundamentally new security paradigm.** If you want "more pick resistance than a standard door lock but still within the pin tumbler system," dimple is the right choice; but it still faces bump / snap threats that must be addressed through the star system's anti-snap / anti-bump designs — not by the fact that "it's a dimple" alone.
 
-所以选 Euro cylinder 时，**看星级（1 星 vs 3 星）比看"是不是 dimple"更重要**——星级直接对应了抗 snap/bump/drill 的具体能力。
+So when choosing a Euro cylinder, **the star rating (1-star vs 3-star) matters more than "is it a dimple"** — the rating directly maps to specific anti-snap / anti-bump / anti-drill capability.
 
-（以上是基于机制分析 + DHF 评级体系的专业判断，非我方实测。）
+(This is professional judgment based on mechanism analysis and the DHF rating system, not empirical testing.)
 
 ---
 
 ## FAQ
 
-**Dimple lock 和普通弹子锁有什么区别？**
-同机制（弹簧销钉 + 剪切线），但销钉从钥匙平面进入，可容纳更多销钉和侧销，抗撬性更高，需要专用工具。
+**How does a dimple lock differ from a standard pin tumbler?**
+Same mechanism (spring pins + shear line), but pins are driven from the key's flat face, allowing more pins and side pins, higher pick resistance, and requiring dedicated tools.
 
-**Dimple lock 更安全吗？**
-在弹子锁体系内，是。但仍受 bump/snap 威胁，安全性取决于星级和抗攻设计，而非"dimple"这个名词。
+**Is a dimple lock more secure?**
+Within the pin tumbler system, yes. But it still faces bump/snap threats; security depends on the star rating and anti-attack design, not the "dimple" label itself.
 
-**什么是 Euro cylinder 的 1 星和 3 星？**
-DHF + Glass & Glazing Federation 制定的评级。1 星基础防撬；3 星抗撬/钻/拔/bump/snap，Secure by Design 认证。
+**What are the 1-star and 3-star Euro cylinder ratings?**
+A rating system from the DHF + Glass & Glazing Federation. 1-star offers basic pick resistance; 3-star resists pick / drill / extraction / bump / snap and is Secure by Design certified.
 
 ---
 
 ## Sources
 
-- Master Key Systems — Euro Cylinder Locks Explained（dimple 机制、11-pin 3 星 vs 6-pin 1 星）
-- LockPickWorld — Pin Tumbler Locks Explained（dimple 对照表、安全评级 3/5）
-- Coastal Group（DHF/GGF 1 vs 3 星体系）
-- Wikipedia — Pin tumbler lock（引 dimple 侧销）
+- Master Key Systems — Euro Cylinder Locks Explained (dimple mechanism, 11-pin 3-star vs 6-pin 1-star)
+- LockPickWorld — Pin Tumbler Locks Explained (dimple comparison, security rating 3/5)
+- Coastal Group — DHF/GGF 1 vs 3 star system
+- Wikipedia — Pin tumbler lock (dimple side pin reference)
 
----
+> Data labeling: key figures above are marked `[F]` (source fact) or `[D]` (industry-derived/experience). Anything in the Author's Take is our own inference, explicitly labeled as professional judgment rather than source fact.
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+> Research date: 2026-09-11 · Accessed: 2026-09-11. Sources are third-party authorities and manufacturer public material, not our own testing. Regulatory information may become outdated; always verify current local requirements before acting.
 
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+## Related
 
-## 关联
-
-- → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
-- → Pin Tumbler Lock Explained
-- → Entity：`https://locktool.com/entity/dimple-lock#entity` / `https://locktool.com/entity/lock#entity`
+- → Pillar: Pin Tumbler vs Wafer vs Disc Detainer
+- → Pin Tumbler Lock: How the Mechanism Works (deep dive)
+- → Entities: `https://locktool.com/entity/dimple-lock#entity` / `https://locktool.com/entity/lock#entity`

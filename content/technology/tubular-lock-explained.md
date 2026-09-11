@@ -4,95 +4,93 @@ description: "Tubular lock explained: how the radial pin tumbler mechanism works
 ---
 # Tubular Lock Explained: The Radial Pin Tumbler Behind Vending Machines and Bike Locks
 
-> 项目：Locktool · Content
-> 类型：Technical Explanation Cluster（模板 B）
-> 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`https://locktool.com/entity/tubular-lock#entity`、`https://locktool.com/entity/lock#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> Project: Locktool · Content
+> Type: Technical Explanation Cluster (Template B)
+> Hub: Lock Technology Hub (/technology/)
+> Primary entities: `https://locktool.com/entity/tubular-lock#entity`, `https://locktool.com/entity/lock#entity`
+> Status: DRAFT
+> Research date: 2026-09-11
 
 ---
 
 ## Direct Answer
 
-Tubular lock（管状锁 / 径向销锁，也称 Ace lock）是**弹子锁的径向变种**——同样是弹簧销钉在剪切线对齐，但销钉不是线性排列，而是**围绕中心轴环形排列**，用一把**圆筒形钥匙**（边缘一圈牙花）驱动。
+A **tubular lock** (also called an Ace lock or radial lock) is a **radial variant of the pin tumbler** — it still aligns spring pins at a shear line, but the pins are arranged in a **ring around a central axis** instead of linearly, driven by a **cylindrical key** (cut around its edge).
 
-它一度被大众认为"比普通锁更安全"，因为普通工具确实难以下手。但真相是：**专用 tubular pick（管状撬锁器）可以在极短时间内打开它**。所以它的安全等级被普遍评为**中等（3/5）——需要正确的工具，但拿到工具就很容易**。
+It's widely assumed to be "more secure than a standard lock" because ordinary tools can't reach it. The truth: a **dedicated tubular pick can open it in seconds to a couple of minutes**. Its security rating is commonly **medium (3/5) — it needs the right tool, but once you have that tool it's easy**.
 
-典型应用：自动售货机、ATM、游戏机、电梯、自行车锁、电脑锁、投币设备。
+Typical applications: vending machines, ATMs, arcade games, elevators, bicycle locks, computer locks, and coin-operated equipment.
 
 ---
 
-## 机制：环形排列的销钉
+## Mechanism: Pins Arranged in a Ring
 
-Tubular lock 和普通弹子锁的底层原理完全一样——**key pin + driver pin + 弹簧在剪切线分离**。区别只在几何：
+A tubular lock's underlying principle is identical to a standard pin tumbler — **key pin + driver pin + spring separating at the shear line**. The only difference is geometry:
 
-| 维度 | 普通弹子锁 | Tubular 锁 |
+| Dimension | Standard pin tumbler | Tubular lock |
 |---|---|---|
-| 销钉排列 | 线性（一排） | 环形（绕中心轴一圈） |
-| 销钉方向 | 垂直 | 水平（朝前） |
-| 销钉数量 | 通常 5–6 | 通常 7、8，或 10 |
-| 钥匙 | 扁平刀刃，边缘齿 | 圆筒形，边缘一圈凹槽 |
+| Pin arrangement | Linear (single row) | Radial (ring around central axis) |
+| Pin orientation | Vertical | Horizontal (facing forward) |
+| Pin count | Usually 5–6 | Usually 7, 8, or 10 |
+| Key | Flat blade, edge teeth | Cylindrical, ring of edge cuts |
 
-正确钥匙插入后，边缘的凹槽把每个环形销钉顶到正确深度，所有销钉对齐剪切线，内芯才能旋转。
+When the correct key inserts, the edge cuts push each radial pin to the correct depth, all pins align with the shear line, and the plug rotates.
 
 ---
 
-## 为什么它被误认为"更安全"，实则容易被专用工具秒开
+## Why It's Mistaken for "Secure" — and Why Dedicated Tools Defeat It Quickly
 
-**大众误判的来源**：tubular lock 常见于投币盒、自动售货机等，看起来"工业级"，且普通 hook/rake 确实插不进圆形钥匙道。
+**Where the public misjudgment comes from**: tubular locks appear on coin boxes and vending machines, so they look "industrial-grade," and ordinary hooks/rakes genuinely don't fit the round keyway.
 
-**真相**：市面上有专门的 **tubular pick**（管状撬锁器）——一个带一圈针（needle）的圆柱工具，插入后施加扭矩 + 左右摆动，让针逐一"敲"到销钉对齐剪切线，通常**数秒到一两分钟**就能打开。
+**The reality**: a dedicated **tubular pick** exists — a cylindrical tool with a ring of needles that, when inserted with torque and a rocking motion, "taps" each pin into shear-line alignment, usually opening the lock in seconds to a minute or two.
 
-关键点：
-1. **普通工具无效，但专用工具高效**——这是它和 pin tumbler 最大的不同。普通弹子锁用通用工具慢慢撬，tubular 锁则需要（也只需要）一个尺寸匹配的管状撬锁器。
-2. **深度要求低**——tubular lock 圈内常被提及的一个设计特性，是它对钥匙深度的依赖更低，这也是它适合频繁开合的投币设备的原因之一。
+Key points:
+1. **Ordinary tools fail, but dedicated tools are efficient** — this is the biggest difference from pin tumbler. A standard pin tumbler is picked slowly with general tools; a tubular lock needs (and only needs) a size-matched tubular pick.
+2. **Lower depth sensitivity** — a design trait often cited within the tubular community, where key-depth dependence is lower, which is one reason it suits frequently-cycled coin devices.
 
-所以它的安全评级是"**需要正确工具**"而非"高安全"。锁匠行业普遍把它列在 **3/5（moderate，需专用工具）**。
+So its security rating is "**requires the correct tool**," not "high security." The locksmith industry commonly lists it at **3/5 (moderate, needs dedicated tools)**.
 
 ---
 
 ## The Author's Take
 
-**我的判断：tubular lock 是一个"被高估"的机制——它的安全建立在"工具不常见"上，而不是"机构本身抗撬"。** 一旦攻击者拿到尺寸匹配的管状撬锁器，它的防护几乎失效。这和 disc detainer 靠机构本身（false gates + DBS）抗撬是本质区别：disc detainer 是"机构难"，tubular 是"工具门槛"。
+**My judgment: the tubular lock is an "overrated" mechanism — its security rests on "the tool isn't common," not "the mechanism resists picking."** Once an attacker has a size-matched tubular pick, its protection nearly vanishes. This is fundamentally different from a disc detainer, which resists via the mechanism itself (false gates + DBS): disc detainer is "mechanism-hard," tubular is "tool-gated."
 
-所以我的建议是：**tubular lock 适合"低价值 + 需要频繁开合 + 防顺手撬"的场景（投币设备、电梯、普通自行车），但不适合作为高安全资产的第一道防线。** 如果你要保护高价值设备，别依赖 tubular。
+So my advice: **the tubular lock suits "low-value + frequent cycling + deter casual opening" contexts (coin devices, elevators, ordinary bicycles), but not as the first line of defense for high-value assets.** If you're protecting high-value equipment, don't rely on a tubular.
 
-（以上是基于机制分析 + 锁匠行业共识的专业判断，非我方实测。）
+(This is professional judgment based on mechanism analysis and locksmith industry consensus, not empirical testing.)
 
 ---
 
 ## FAQ
 
-**Tubular lock 是什么？**
-径向销弹子锁，销钉环形排列，圆筒钥匙驱动。也叫 Ace lock / radial lock。
+**What is a tubular lock?**
+A radial pin tumbler with pins arranged in a ring, driven by a cylindrical key. Also called an Ace lock or radial lock.
 
-**Tubular lock 安全吗？**
-中等（3/5）。普通工具难撬，但专用管状撬锁器可秒开，所以不适合高安全场景。
+**Is a tubular lock secure?**
+Medium (3/5). Ordinary tools struggle, but a dedicated tubular pick can open it quickly, so it doesn't suit high-security contexts.
 
-**它用在哪些地方？**
-自动售货机、ATM、游戏机、电梯、自行车锁、电脑锁、投币设备。
+**Where is it used?**
+Vending machines, ATMs, arcade games, elevators, bicycle locks, computer locks, coin-operated devices.
 
-**它有几个销钉？**
-通常 7、8，或 10 个，环形均匀分布。
+**How many pins does it have?**
+Usually 7, 8, or 10, evenly spaced around the ring.
 
 ---
 
 ## Sources
 
-- LockPickWorld — Tubular Locks Explained（圆形排布、7/8 销、评级）
-- SouthOrd — Beginner's Guide to Tubular Lock Picking（机制、管状撬锁器原理）
-- ITS Tactical — Tubular Lock Picking（7/8/10 pin 配置、工具）
-- Lockpicks.com — How to Pick a Tubular Lock（应用场景、销钉数）
+- LockPickWorld — Tubular Locks Explained (circular arrangement, 7/8 pins, rating)
+- SouthOrd — Beginner's Guide to Tubular Lock Picking (mechanism, tubular pick principle)
+- ITS Tactical — Tubular Lock Picking (7/8/10 pin configurations, tools)
+- Lockpicks.com — How to Pick a Tubular Lock (applications, pin counts)
 
----
+> Data labeling: key figures above are marked `[F]` (source fact) or `[D]` (industry-derived/experience). Anything in the Author's Take is our own inference, explicitly labeled as professional judgment rather than source fact.
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
+> Research date: 2026-09-11 · Accessed: 2026-09-11. Sources are third-party authorities and manufacturer public material, not our own testing. Regulatory information may become outdated; always verify current local requirements before acting.
 
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+## Related
 
-## 关联
-
-- → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
-- → Pin Tumbler Lock Explained
-- → Entity：`https://locktool.com/entity/tubular-lock#entity` / `https://locktool.com/entity/lock#entity`
+- → Pillar: Pin Tumbler vs Wafer vs Disc Detainer
+- → Pin Tumbler Lock: How the Mechanism Works (deep dive)
+- → Entities: `https://locktool.com/entity/tubular-lock#entity` / `https://locktool.com/entity/lock#entity`

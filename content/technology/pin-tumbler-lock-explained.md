@@ -4,126 +4,128 @@ description: "Pin tumbler lock explained: how pins, the shear line, and MACS wor
 ---
 # Pin Tumbler Lock: How the Mechanism Works, Key Combinations, and Security Pins
 
-> 项目：Locktool · Content
-> 类型：Technical Explanation Cluster（模板 B）
-> 所属 Hub：Lock Technology Hub（/technology/）
-> 主实体：`https://locktool.com/entity/pin-tumbler#entity`、`https://locktool.com/entity/lock#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> Project: Locktool · Content
+> Type: Technical Explanation Cluster (Template B)
+> Hub: Lock Technology Hub (/technology/)
+> Primary entities: `https://locktool.com/entity/pin-tumbler#entity`, `https://locktool.com/entity/lock#entity`
+> Status: DRAFT
+> Research date: 2026-09-11
 
 ---
 
 ## Direct Answer
 
-Pin tumbler lock（弹子锁）是**用弹簧顶着的成对销钉在剪切线对齐来解锁**的圆柱锁。正确钥匙把每对销钉顶到精确高度，让"钥匙销与驱动销的接缝"恰好落在剪切线上，内芯才能旋转。
+A **pin tumbler lock** is a cylinder that unlocks when spring-loaded pin pairs align at the **shear line**. The correct key lifts each pair to a precise height so the joint between the key pin and driver pin lands exactly on the shear line, freeing the plug to rotate.
 
-它是目前**最主流的机械锁机制**，从住宅门、deadbolt 到大多数挂锁都在用。一个 5 销、10 深度的 Schlage 弹子锁有 10 万理论组合，商用有效组合约 3–5 万。
-
----
-
-## 工作机制（机制层）
-
-弹子锁由**外壳（shell）**和**内芯（plug）**两个同心圆柱构成。两者对齐钻有一排孔洞，每个孔内从上到下依次是：
-
-1. **弹簧（Spring）**：把销钉往下压。
-2. **驱动销（Driver Pin）**：弹簧下方的销钉。
-3. **钥匙销（Key Pin）**：最底部、直接接触钥匙的销钉，长度不一。
-
-**剪切线（Shear Line）**是内芯与外鞘之间的分界平面。
-
-- **无钥匙**：弹簧把驱动销压进内芯，驱动销横跨剪切线，卡住内芯。
-- **插正确钥匙**：钥匙牙花（bitting）把每根钥匙销顶到精确高度，使"钥匙销顶面 = 剪切线高度"，即钥匙销与驱动销的接缝对齐剪切线。此时内芯可旋转，带动后端凸轮缩回锁舌。
-- **插错误钥匙**：至少一根销钉没对齐——要么驱动销仍伸进内芯，要么钥匙销顶进外鞘——都会卡死旋转。
+It is the **most widely used mechanical lock mechanism today**, from residential doors and deadbolts to most padlocks. A 5-pin, 10-depth Schlage cylinder has 100,000 theoretical combinations, with roughly 30,000–50,000 commercially usable.
 
 ---
 
-## 组合数：一个锁到底有多少种钥匙
+## How the Mechanism Works
 
-这往往是买家和锁具设计者最关心的数字。核心公式是**深度档数^销钉数**：
+A pin tumbler lock consists of two concentric cylinders — an outer **shell** and an inner **plug** — with aligned drilled chambers. Each chamber holds, from top to bottom:
 
-| 配置 | 原始组合数（depth^pins） | 说明 |
+1. **Spring** — pushes the pins downward.
+2. **Driver pin** — sits below the spring.
+3. **Key pin** — the bottom-most pin that contacts the key; length varies per chamber.
+
+The **shear line** is the boundary plane between plug and shell.
+
+- **No key**: the spring forces the driver pin into the plug, so it straddles the shear line and locks the plug.
+- **Correct key**: the key's **bitting** lifts each key pin so the key-pin top face equals the shear-line height — meaning the key pin / driver pin joint aligns with the shear line. The plug rotates and drives the rear cam to retract the bolt.
+- **Wrong key**: at least one pin fails to align — either a driver pin still extends into the plug, or a key pin is pushed up into the shell — jamming rotation.
+
+---
+
+## Combination Count: How Many Different Keys a Lock Has
+
+This is usually the number buyers and lock designers care most about. The core formula is **depth increments^pin count**:
+
+| Configuration | Raw combinations (depth^pins) | Notes |
 |---|---|---|
-| 4-pin × 6 depth | 6⁴ = 1,296 | 廉价挂锁，容易互开 |
-| 5-pin × 10 depth（Schlage） | 10⁵ = 100,000 | 住宅标准 |
-| 6-pin × 10 depth | 10⁶ = 1,000,000 | 商用高端 |
+| 4-pin × 6 depth | 6⁴ = 1,296 | Cheap padlocks; prone to key interchange |
+| 5-pin × 10 depth (Schlage) | 10⁵ = 100,000 | Residential standard |
+| 6-pin × 10 depth | 10⁶ = 1,000,000 | High-end commercial |
 
-**但原始组合数 ≠ 有效组合数。** 两个因素会把它砍掉：
+**But raw combinations ≠ usable combinations.** Two factors reduce the count:
 
-### 1. MACS（Maximum Adjacent Cut Specification，最大相邻牙花差）
-钥匙相邻两个牙花的深度差不能太大，否则钥匙齿会"拖带"导致插拔困难甚至回切（back cutting）。**Schlage 的 MACS = 7**，即相邻两牙花深度差不能超过 7 档。
+### 1. MACS (Maximum Adjacent Cut Specification)
 
-### 2. 有效组合折减
-经 MACS 和相邻牙花限制后，**可用组合数通常只剩原始值的 50%–70%**。所以：
+The depth difference between two adjacent key cuts cannot be too large, or the key teeth "drag" and cause insertion/removal difficulty or even back-cutting. **Schlage's MACS = 7**, meaning adjacent cuts cannot differ by more than 7 increments.
 
-- 5-pin × 10 depth 的 Schlage：理论 10 万 → 商用有效约 **3 万–5 万**。`[D]`
-- ScienceDirect 给出的另一套参考口径：5 销 ≈ **8,200** 有效组合（假设 8 深度档、有效组合不超过数学可能组合的 23%）。
+### 2. Usable-combination reduction
 
-> 两个数字看起来差很多，是因为**口径不同**：firgelliauto 用的是 Schlage 10 深度完整档位做 MACS 折减，ScienceDirect 用的是 8 深度档 + 23% 有效率的保守估算。跨口径横向比较没有意义，见下方 "The Author's Take"。
+After MACS and adjacent-cut constraints, **usable combinations typically fall to 50–70% of the raw value**:
+
+- 5-pin × 10-depth Schlage: 100,000 theoretical → roughly **30,000–50,000** commercial. `[D]`
+- ScienceDirect's alternative reference: 5-pin ≈ **8,200** effective (assuming 8 depth increments and effective combinations capped at 23% of the mathematical maximum).
+
+> The two figures differ because they use different assumptions: Firgelli uses Schlage's full 10-depth set with MACS reduction; ScienceDirect uses 8 depth increments with a conservative 23% efficiency factor. Comparing the two across assumptions is meaningless — see the Author's Take below.
 
 ---
 
-## 安全销（Security Pins）：弹子锁的升级路径
+## Security Pins: The Pin Tumbler Upgrade Path
 
-弹子锁的最大优势是**可升级**——通过换安全销，抗撬性可以从"入门练习"一路抬到"严肃挑战"。
+The pin tumbler's greatest strength is **upgradeability** — swapping in security pins raises pick resistance from "beginner practice" to "serious challenge."
 
-| 安全销类型 | 机制 | 抗撬效果 |
+| Security pin | Mechanism | Anti-pick effect |
 |---|---|---|
-| **Spool Pin（线轴销）** | 中间细、两头粗的线轴形，会卡在剪切线上 | 撬锁时产生"counter-rotation"（反旋），让撬锁者误判已 set |
-| **Serrated Pin（锯齿销）** | 表面多条细小凹槽，增加摩擦 | 每次碰到凹槽都像"set 了"，制造大量假反馈 |
-| **Mushroom Pin（蘑菇销）** | 蘑菇形，头部宽大 | 类似 spool，制造 false set |
+| **Spool pin** | Hourglass / bobbin shape, narrow middle, wide ends — catches on the shear line | Creates "counter-rotation," falsely signaling the picker a pin is set |
+| **Serrated pin** | Machined with many fine grooves that add friction | Each groove catches like a "set," generating heavy false feedback |
+| **Mushroom pin** | Mushroom-shaped, wide head | Similar to spool, producing false sets |
 
-安全销的核心逻辑是一致的：**让撬锁者无法分辨"真 set"和"假 set"**。撬锁靠的是手感反馈（tension + 触碰），安全销就是专门在这些反馈上制造噪音。
+The logic of all security pins is identical: **deny the picker the ability to distinguish a true set from a false set.** Picking relies on tactile feedback (tension + feel); security pins inject noise specifically into that feedback channel.
 
 ---
 
 ## The Author's Take
 
-**我建议：判断弹子锁安全，别看"几个销钉"这种单一数字，要看"公差 + 安全销 + keyway"三件事一起看。** 原因：
+**My advice: judge pin tumbler security not by the single number "how many pins," but by tolerance + security pins + keyway together.** Because:
 
-1. **单一销钉数有误导性**——上文 8,200 和 3–5 万两个"5 销组合数"差了好几倍，恰恰说明"5 销"这个词本身不携带足够信息，深度档数和计算口径才决定真实值。
-2. **安全销的性价比远高于盲目加销钉**——花小钱把一个 5 销普通弹子锁换成带 spool/serrated 销的版本，抗撬提升通常比多钻一个销钉更明显。
-3. **公差是隐形的安全**——±0.001" 的销长公差 vs 松公差，对撬锁难度的差异极大，但买家几乎不会看这个。
+1. **A single pin count is misleading** — the 8,200 and 30,000–50,000 figures above are both "5-pin combination counts" yet differ several-fold, proving the term "5-pin" alone carries too little information. Depth increments and calculation assumptions determine the real value.
+2. **Security pins deliver more per dollar than blindly adding pins** — upgrading a 5-pin cylinder to one with spool/serrated pins usually improves pick resistance more than drilling an extra chamber.
+3. **Tolerance is invisible security** — ±0.001" pin-length tolerance versus loose tolerance changes picking difficulty dramatically, yet buyers almost never check it.
 
-所以：**如果你在选住宅门锁，"6 销 + 窄 keyway + 安全销"的组合，比"数字上更多销钉"更值得优先。** 这不是否定组合数，而是说组合数只是拼图的一块。
+So: **if you're choosing a residential lock, the "6 pins + paracentric keyway + security pins" combination should outrank "more pin count on paper."** That isn't dismissing combination count — it's recognizing it as one piece of the puzzle.
 
-（以上是基于机制工程分析 + 公开规格数据的专业判断，非我方实测撬锁。）
+(This is professional judgment based on mechanism engineering analysis and public specification data, not our own picking tests.)
 
 ---
 
 ## FAQ
 
-**弹子锁有几个销钉？**
-住宅弹子锁通常是 5–6 个销钉；练习锁可能更少；高端安全锁可到 6+ 并加侧闩。销钉数不是唯一安全指标。
+**How many pins does a pin tumbler lock have?**
+Residential locks typically have 5–6 pins; practice locks may have fewer; high-security locks can reach 6+ with sidebars. Pin count is not the only security indicator.
 
-**5 销弹子锁有多少组合？**
-取决于深度档数和计算口径。理论值 10⁵=100,000（10 深度）；经 MACS 折减后商用约 3–5 万；另一保守口径给 8,200（8 深度、23% 有效率）。
+**How many combinations does a 5-pin pin tumbler have?**
+Depends on depth increments and calculation assumptions. Theoretical: 10⁵ = 100,000 (10 depth); MACS-reduced commercial: 30,000–50,000; an alternative conservative estimate gives 8,200 (8 depth, 23% efficiency).
 
-**MACS 是什么？**
-Maximum Adjacent Cut Specification，钥匙相邻两个牙花深度差的最大允许值，防止钥匙齿拖带。Schlage 的 MACS 是 7。
+**What is MACS?**
+Maximum Adjacent Cut Specification — the maximum allowed depth difference between two adjacent key cuts, preventing tooth drag. Schlage's MACS is 7.
 
-**安全销是什么？为什么更抗撬？**
-spool/serrated/mushroom 等特殊形状的销钉，通过制造 false set 让撬锁者误判，提升抗撬性。
+**What are security pins, and why are they more pick-resistant?**
+Spool / serrated / mushroom pins are specially shaped to create false sets and mislead the picker, raising pick resistance.
 
-**弹子锁能 bump 开吗？**
-能。bump key 撞击销钉、利用惯性让 driver pin 弹起瞬间对齐剪切线。安全销可缓解但非绝对免疫（这点区别于盘片锁，盘片锁无销钉免疫 bump）。
+**Can a pin tumbler lock be bumped?**
+Yes. A bump key strikes the pins, using inertia to make driver pins jump and momentarily align with the shear line. Security pins mitigate but don't guarantee immunity (unlike disc detainer, which has no pins to bump).
 
 ---
 
 ## Sources
 
-- Firgelli Automations — Pin Tumbler Lock（组合数公式、Schlage MACS=7、±0.001" 公差、3–5 万商用组合）
-- [ScienceDirect](https://www.sciencedirect.com/) — Tumbler Mechanism（组合数参考表：5 销 ≈ 8,200）
-- [Lockwiki](https://www.lockwiki.com/) — MACS / Shear line（MACS 定义与公式）
-- Wikipedia — Pin tumbler lock（机制、master keying）
-- LockPickWorld — Pin Tumbler Locks Explained（安全销、练习锁、安全等级）
+- Firgelli Automations — Pin Tumbler Lock (combination formula, Schlage MACS=7, ±0.001" tolerance, 30k–50k commercial combinations)
+- [ScienceDirect](https://www.sciencedirect.com/) — Tumbler Mechanism (combination reference table: 5-pin ≈ 8,200)
+- [Lockwiki](https://www.lockwiki.com/) — MACS / Shear line (MACS definition and formula)
+- Wikipedia — Pin tumbler lock (mechanism, master keying)
+- LockPickWorld — Pin Tumbler Locks Explained (security pins, practice locks, security ratings)
 
----
+> Data labeling: key figures above are marked `[F]` (source fact) or `[D]` (industry-derived/experience). Anything in the Author's Take is our own inference, explicitly labeled as professional judgment rather than source fact.
 
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+> Research date: 2026-09-11 · Accessed: 2026-09-11. Sources are third-party authorities and manufacturer public material, not our own testing. Regulatory information may become outdated; always verify current local requirements before acting.
 
-## 关联
+## Related
 
-- → Pillar：Pin Tumbler vs Wafer vs Disc Detainer
+- → Pillar: Pin Tumbler vs Wafer vs Disc Detainer
 - → Wafer vs Pin Tumbler
 - → Disc Detainer Locks Explained
-- → Entity：`https://locktool.com/entity/pin-tumbler#entity` / `https://locktool.com/entity/lock#entity`
+- → Entities: `https://locktool.com/entity/pin-tumbler#entity` / `https://locktool.com/entity/lock#entity`

@@ -16,9 +16,22 @@ Understand how lock mechanisms actually work — the engineering behind pin tumb
 
 ## How This Hub Works
 
-Each article explains **how a mechanism works** — this is education, not attack instruction. We never provide step-by-step bypass techniques.
+Each article explains **how a mechanism works** — this is education, not attack instruction. We explain the engineering principles (shear lines, gates, sidebars, detents) so professionals and buyers can make informed decisions, but we never provide step-by-step bypass or defeat techniques.
 
-**Author's Take** blocks give a first-person engineering judgment (e.g., "residential doors: security pins + pin tumbler, not an over-engineered disc detainer").
+Every article carries an **Author's Take**: a first-person engineering judgment that flags common misconceptions. For example, "residential doors: a pin tumbler with security pins is the right call — not an over-engineered disc detainer."
+
+## Key Mechanism Facts at a Glance
+
+| Mechanism | Blocking Element | Typical Combination Count | Relative Pick Resistance |
+|---|---|---|---|
+| Wafer | Flat spring-loaded wafer | Low | Lowest |
+| Pin tumbler | Key pin + driver pin pair | 5-pin ≈ 8,200 effective | Low–medium (upgradeable) |
+| Tubular | Radial pin tumbler | Medium | Medium (dedicated tools defeat it) |
+| Dimple | Side-pinned pin tumbler | Medium–high | Medium–high |
+| Lever | Lever + gate + bolt stump | Medium | High (with false notches + curtain) |
+| Disc detainer | Rotating discs + sidebar | Highest (Abloy Protec2 ≈ 190M) | Highest |
+
+> These figures are sourced from manufacturer data and third-party references, labeled `[F]` (fact) or `[D]` (derived). See each article for full citations.
 
 ## Related Hubs
 
