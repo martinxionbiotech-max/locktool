@@ -1,0 +1,68 @@
+site_name: Locktool
+site_description: Professional Locksmith Tools & Lock Technology Resources — a knowledge-first resource for locksmiths, security technicians, and lock technology professionals.
+site_url: https://locktool.com/
+
+docs_dir: content
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  palette:
+    scheme: default
+    primary: indigo
+    accent: amber
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Lock Technology:
+      - technology/index.md
+      - Pin Tumbler vs Wafer vs Disc Detainer: technology/pin-tumbler-vs-wafer-vs-disc-detainer.md
+      - Pin Tumbler Lock Explained: technology/pin-tumbler-lock-explained.md
+      - Wafer vs Pin Tumbler: technology/wafer-vs-pin-tumbler.md
+      - Disc Detainer Locks Explained: technology/disc-detainer-locks-explained.md
+      - Dimple Lock Explained: technology/dimple-lock-explained.md
+      - Tubular Lock Explained: technology/tubular-lock-explained.md
+      - Lever Tumbler Lock Explained: technology/lever-tumbler-lock-explained.md
+  - Tools & Equipment:
+      - tools/index.md
+      - Locksmith Tool Taxonomy: tools/locksmith-tool-taxonomy.md
+      - Lock Pick Types Explained: tools/lock-pick-types-explained.md
+      - Key Cutting Machines Explained: tools/key-cutting-machines-explained.md
+      - Automotive Key Programmers: tools/automotive-key-programmers-explained.md
+      - Lishi Tools Explained: tools/lishi-tools-explained.md
+      - Lock Pick Gun Explained: tools/lock-pick-gun-explained.md
+  - Certification & Training:
+      - certification/index.md
+      - How to Become a Locksmith: certification/how-to-become-a-locksmith.md
+      - ALOA Certification Levels: certification/aloa-certification-levels.md
+      - Locksmith License by State: certification/locksmith-license-by-state.md
+  - Standards & Compliance:
+      - standards/index.md
+      - Lock Security Standards Explained: standards/lock-security-standards-explained.md
+      - EN 1303 Decoded: standards/en-1303-decoded.md
+      - ANSI/BHMA Grades Decoded: standards/ansi-bhma-grades-decoded.md
+  - Vault & Safe:
+      - vault/index.md
+      - Safe Lock Types Explained: vault/safe-lock-types-explained.md
+      - Safe Burglary Ratings Decoded: vault/safe-burglary-ratings-decoded.md
+  - Access Control:
+      - access-control/index.md
+      - Electronic Access Control Explained: access-control/electronic-access-control-explained.md
+      - Electric Strike vs Maglock: access-control/electric-strike-vs-maglock.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search

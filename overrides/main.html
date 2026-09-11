@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://locktool.com/#org",
+        "name": "Locktool",
+        "url": "https://locktool.com/",
+        "description": "Professional Locksmith Tools & Lock Technology Resources",
+        "logo": "https://locktool.com/assets/logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://locktool.com/#website",
+        "url": "https://locktool.com/",
+        "name": "Locktool",
+        "publisher": { "@id": "https://locktool.com/#org" }
+      }
+    ]
+  }
+  </script>
+{% endblock %}
