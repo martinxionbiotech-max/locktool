@@ -61,6 +61,19 @@ The Abloy Protec2 has roughly **197 million** combinations (manufacturer data), 
 
 ---
 
+## The Disc Detainer Family: A Rough Pick-Resistance Ladder
+
+"Disc detainer" is a broad family, not a single security grade. The following ladder separates the tiers so a buyer doesn't assume every rotating-disc lock is an Abloy. Figures are derived from public specifications and industry consensus, labeled `[F]`/`[D]`.
+
+| Tier | Typical build | Discs | Gates | Combination count | Relative pick resistance | Typical use |
+|---|---|---|---|---|---|---|
+| **Budget** | Stamped discs, no false gates, soft housing | 5–7 | True gates only | Low–medium | Low–medium (practice-friendly) | Cheap padlocks, low-value applications |
+| **Mid** | Machined discs, basic hardening | 7–9 | True + occasional false gates | Medium | Medium | Mid-range padlocks, bicycle locks |
+| **High** | Precision discs, false gates, hardened housing | 9–11 | True + false gates | High | High | High-security padlocks, utility locks |
+| **Flagship (Abloy Protec2-class)** | DBS + false gates + full case-hardened housing + restricted keyway | 9/11 | True + false + DBS | ≈ **190–197M** `[F]` | **Highest** (mechanical) | Critical infrastructure, ATMs, utility vaults |
+
+> The single most misleading assumption in buyer discussions is "it's a disc detainer, so it's hard to pick." Pick resistance is a function of build quality — false gates, DBS, tolerance, and housing — not the disc mechanism alone.
+
 ## But "Most Pick-Resistant" Is Not Absolute — Know the Boundaries
 
 1. **A cheap disc detainer ≠ Abloy.** A 6-disc budget padlock might be a good practice target; its pick resistance is worlds apart from the Protec2. "Disc detainer" is a family, not a single security grade.

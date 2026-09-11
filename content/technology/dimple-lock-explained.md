@@ -49,6 +49,20 @@ Dimple locks appear heavily in Euro cylinders, which carry a **1–3 star rating
 
 **Key note**: the Euro cylinder's **greatest weakness is not the pin mechanism but "lock snapping"** — violently breaking the cylinder to expose the internal mechanism. This is the most common attack on 1-star low-security Euro cylinders, and 3-star cylinders solve it with anti-snap designs.
 
+### Star Rating × Attack Vector Matrix
+
+The star rating maps directly to specific attack vectors, not to a vague "security" label. This table makes that mapping explicit — each attack column shows whether that tier is designed to resist it:
+
+| Attack vector | What it targets | 1-star (6-pin) | 3-star (11-pin, anti-*) |
+|---|---|---|---|
+| **Picking** | Manipulates pins to align the shear line | Partial (no security pins) | Resists (multi-pin + anti-pick design) |
+| **Bumping** | Strikes pins so driver pins momentarily clear the shear line | Vulnerable | Resists (anti-bump) |
+| **Drilling** | Bores through the cylinder/housing | Vulnerable | Resists (anti-drill inserts + hardened pins) |
+| **Snapping** | Breaks the cylinder at its fixing point to expose the mechanism | **Vulnerable (most common)** | Resists (anti-snap sacrificial section) |
+| **Plug extraction** | Pulls the plug out to bypass the pins | Vulnerable | Resists (anti-extraction) |
+
+> The single most important upgrade decision in a Euro cylinder is **snap resistance**, not pin count. A 6-pin 1-star cylinder and an 11-pin 3-star cylinder differ most dramatically on snapping — the attack most often used against exposed UK/EU lock cylinders. Pin count is secondary to the anti-snap design.
+
 ---
 
 ## The Author's Take
