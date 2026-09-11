@@ -20,6 +20,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Lock Type Comparison Matrix: lock-type-comparison-matrix.md
   - Lock Technology:
       - technology/index.md
       - Pin Tumbler vs Wafer vs Disc Detainer: technology/pin-tumbler-vs-wafer-vs-disc-detainer.md
