@@ -1,132 +1,157 @@
 ---
-title: "Access Control Credentials Explained: Prox Cards, Smart Cards, Biometrics, and the Wiegand Backbone"
-description: "Access control credentials compared: 125kHz prox cards vs 13.56MHz smart cards vs biometrics, and how the Wiegand interface works. Choose the right credential by risk level."
+title: "Access Control Credentials Explained: 125kHz Prox, 13.56MHz MIFARE/DESFire, Seos, Mobile, UHF — and the Wiegand vs OSDP Divide"
+description: "Access control credentials compared by frequency, encryption, and migration path: 125kHz prox vs 13.56MHz MIFARE Classic/DESFire vs HID Seos vs mobile vs UHF — plus why Wiegand is a protocol, not a card, and why OSDP replaces it."
 ---
-# Access Control Credentials Explained: Prox Cards, Smart Cards, Biometrics, and the Wiegand Backbone
+# Access Control Credentials Explained: Prox, Smart Cards, Seos, Mobile, UHF — and the Wiegand vs OSDP Divide
 
 > 项目：Locktool · Content
-> 类型：Access Control Cluster（模板 G）
+> 类型：Access Control Cluster（模板 G/H）
 > 所属 Hub：Access Control Hub（/access-control/）
-> 主实体：`https://locktool.com/entity/credential#entity`、`https://locktool.com/entity/prox-card#entity`、`https://locktool.com/entity/smart-card#entity`、`https://locktool.com/entity/wiegand#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> 主实体：`https://locktool.com/entity/credential#entity`、`https://locktool.com/entity/prox-card#entity`、`https://locktool.com/entity/smart-card#entity`、`https://locktool.com/entity/wiegand#entity`、`https://locktool.com/entity/osdp#entity`
+> 状态：UPGRADED v0.2
+> 研究日期：2026-09-12
 
 ---
 
-## Direct Answer
+## Quick Answer
 
-门禁系统的"凭证"（credential）是你用来证明"我是谁"的那件东西。主流类型从低到高安全：
+A credential is the thing that proves identity to the reader. The **security dividing line is encryption**: 125kHz prox cards and 13.56MHz MIFARE Classic transmit data that can be read and reproduced; MIFARE DESFire (EV1/EV2/EV3), HID Seos, and modern mobile credentials use AES/3DES with mutual authentication and are the current high-assurance options. The reader-to-controller wire matters just as much — **Wiegand is an unencrypted one-way interface, while OSDP adds encryption, supervision, and two-way control.**
 
-| 凭证 | 技术 | 安全 |
+> **Definition — Credential:** any token (card, fob, phone, PIN, or biometric) that a reader presents to the controller as proof of identity for an access decision. The credential's *technology* (frequency, memory, cryptography) — not its physical shape — determines its resistance to duplication.
+
+## The Credential Landscape at a Glance
+
+| Credential | Frequency | Encryption / auth | Read range (typical) | Duplication resistance |
+|---|---|---|---|---|
+| PIN / keypad | — | None (shared secret) | Contact | Low (observable/shareable) |
+| Magstripe | — | None | Swipe | Low |
+| **125kHz Prox** | 125 kHz (LF) | None — fixed ID in clear | ~2–6 in | Low |
+| **MIFARE Classic** | 13.56 MHz (HF) | Proprietary CRYPTO1 (broken) | ~up to 4 in (ISO 14443) | Low–medium |
+| **MIFARE DESFire EV1/2/3** | 13.56 MHz (HF) | AES-128 + 3DES, mutual auth | ~up to 4 in (ISO 14443) | High |
+| **HID Seos / iCLASS SE** | 13.56 MHz (HF) | AES-128, mutual auth | ~up to 4 in (ISO 14443) | High |
+| **Mobile credential** | NFC / BLE | AES-128 (Seos on phone) | NFC ~inches; BLE ~feet | High |
+| **UHF (long-range)** | 860–960 MHz | Varies by implementation | Several meters (up to ~15 m) | Varies |
+| **Biometric** | — | Template match | Contact/near | High (but non-revocable) |
+
+## The Prox Card: Legacy, Ubiquitous, and Inherently Insecure
+
+125kHz proximity cards remain "the most widely used card for electronic access in North America" (ColorID [F]), but they carry a structural weakness that no firmware patch fixes:
+
+- The chip holds **only a fixed identifier** — typically a **facility code + card number** — and transmits it **in the clear** when energized by the reader field. There is **no cryptographic check** that the card is genuine.
+- Because the data is a static, unencrypted ID, a prox credential is **vulnerable to duplication** — the ID is read in the clear and can be reproduced. This is a documented, industry-acknowledged risk — the reason the industry has been migrating away for two decades.
+- Prox cards also **can't store applications** (no memory for multiple functions), so they're a door-access-only token.
+
+**Why it still exists:** backward compatibility. Facilities with thousands of prox cards and readers keep it running because a forklift migration is expensive — not because prox is secure.
+
+## 13.56MHz Smart Cards: MIFARE Classic vs DESFire
+
+Both operate at 13.56MHz, but they are **a generation apart** in security:
+
+| | MIFARE Classic | MIFARE DESFire EV1/EV2/EV3 |
 |---|---|---|
-| **PIN / 键盘码** | 数字密码 | 最低（可被偷看/分享） |
-| **磁条卡** | swipe 磁条 | 低（易复制） |
-| **Prox 卡 / 钥匙扣** | 125kHz RFID | 中（未加密、可克隆） |
-| **智能卡（Smart Card）** | 芯片 + 加密 | 高（双向认证、难克隆） |
-| **生物识别** | 指纹/人脸/虹膜 | 最高（不可丢失，但不可撤销） |
-| **手机凭证 / MFA** | NFC/BLE + 多因素 | 高（组合验证） |
+| Introduced | Mid-1990s | 2006 onward (EV1) |
+| Crypto | Proprietary **CRYPTO1** cipher | Open **AES-128 + 3DES** |
+| Auth | Mutual auth (but cipher is broken) | Mutual auth, secure key storage |
+| Memory | Fixed sectors | Flexible secure file system |
+| Multi-application | Limited | Yes (access + payment + transit + ID) |
+| NFC compatibility | Partial | Full NFC |
+| Duplication resistance | **Compromised** (cipher cryptographically broken) | **High** — not publicly broken |
 
-一句话：**安全的分水岭是"加密"——未加密的 prox 卡/磁条卡可被克隆，加密的智能卡和生物识别才真正抗伪造。**
+The key correction to internalize: **MIFARE Classic's CRYPTO1 cipher has been cryptographically broken**, so Classic cards are *more* secure than prox but still **vulnerable to duplication** by specialized equipment. **DESFire** uses well-vetted, publicly scrutinized AES/3DES on a secure microcontroller, which is why it's the enterprise/multi-application default (RFIDCard / ColorID [F]).
 
----
+**Read-range note:** ISO 14443 (MIFARE/Seos/iCLASS) cards read up to ~10 cm (4 in); ISO 15693 HF cards read a few inches to about a foot (Telaeris [F]). Neither is a "long-range" credential.
 
-## 关键纠偏 1：Prox 卡 ≠ 智能卡（这是最常被搞混的）
+## HID Seos and iCLASS SE: The High-Assurance Tier
 
-**Proximity card（125kHz prox）和 smart card 是两回事，安全级别差一个档次**（Koorsen / Capture Technologies）：
+- **HID Seos** is a software-based credential using **AES-128 encryption and mutual authentication** between credential and reader; HID states it is the first finished access-control card certified by independent lab **TÜV** (HID Global [F]).
+- **iCLASS SE** wraps credential data in a **Secure Identity Object (SIO)** for 13.56MHz cards.
+- Seos is deliberately **multi-application** — access, secure printing, cashless vending, network login — and it is the technology behind HID's **mobile credentials**.
 
-| | Prox Card（125kHz） | Smart Card（如 MIFARE，13.56MHz） |
-|---|---|---|
-| 频率 | 125kHz（1990 年代老技术） | 13.56MHz |
-| 加密 | ❌ 无，数据明文 | ✅ 有加密 |
-| 认证 | 单向（reader 读卡片 ID） | **双向**（reader 和 card 互相认证） |
-| 可克隆 | 容易 | 难 |
-| 存储 | 只有一个 ID 码 | 可存多应用数据 |
+## Mobile Credentials (NFC / BLE)
 
-**关键点**：prox 卡里就是**一个固定的 ID 码**（facility code + 卡号），读出来就是明文，没有加密校验——因此可以被克隆/复制。智能卡要 reader 和 card **互相认证**，多一层安全，也更难伪造（也能一卡多用：门禁 + 打印 + 支付）。
+A mobile credential puts the same secure technology (e.g., Seos) onto a phone, delivered via an app or wallet, then presented over **NFC or BLE** (HID Mobile Access [F]). The advantages: instant remote issuance/revocation, no physical card to lose, and the credential lives inside the phone's secure element. The trade-offs: dependency on the phone's battery and OS, and a different (longer, BLE) read interaction than a card tap.
 
----
+## UHF Long-Range: For Vehicles and Gates, Not Doors
 
-## 关键纠偏 2：Wiegand 是"接口标准"，不是"凭证类型"
+UHF RFID (860–960 MHz) is the long-range layer for **vehicle/gate access, parking, and perimeter** identification — windshield tags and passive tags read at **several meters, up to ~15 m** on high-end readers (Nedap TRANSIT [F]). It is **not** the right tool for pedestrian doors (you don't want a door unlocking from 5 meters away), and its security varies by implementation — so long-range vehicle credentials should be evaluated the same way as any other: on encryption, authentication, and revocation, not on read range alone.
 
-很多人把"Wiegand"当成一种卡，其实它是一套**接口/协议**，是门禁系统里 reader 和 controller 之间的**布线标准**（CardLogix / Keri Systems）：
+## Wiegand vs OSDP: The Wire Is Part of the Security Model
 
-- **Wiegand 效应**：1970 年代 John Wiegand 发明的磁线技术，原用于硬卡（swipe card）。
-- **Wiegand 接口**：虽然硬卡已淘汰，但**接口标准活了下来**——因为全球几乎所有 controller 都支持它，所以今天几乎所有 prox/智能卡/生物/键盘 reader 都还是输出 Wiegand 信号。
-- **26-bit Wiegand**：最经典的格式——26 bit 里，分 facility code + ID 号，第 1 和 26 bit 是奇偶校验。
+The biggest terminology error in access control is calling "Wiegand" a card. It is an **interface standard** — the electrical/protocol link between reader and controller.
 
-一句话：**Wiegand 是"Reader 和 Controller 之间怎么说话"的通用语言，不是"你用的是什么卡"。** 你在系统里看到 "26-bit"、"37-bit"，指的就是这个协议格式，bit 越多能容纳的卡号空间越大。
+**Wiegand (legacy interface):**
 
----
+- **One-way** — the reader sends data to the controller; the controller can't talk back or supervise the reader.
+- **Unencrypted** — credential data travels in the clear on the wire; if the wiring is physically accessed, data can potentially be intercepted (Axis [F]).
+- **Classic "26-bit" format** — facility code + card number + parity bits; more bits = larger ID space, but more bits don't add encryption.
+- **~500 ft (150 m)** practical cable distance, and readers need extra wires for LED/buzzer/tamper.
 
-## 关键纠偏 3：生物识别"最安全"但有一个致命缺陷
+**OSDP (Open Supervised Device Protocol, SIA):**
 
-生物识别（指纹/人脸/虹膜）确实不可丢失、不可共享，是"最高安全"级别。但它有一个**不可逆的缺陷**：
+- **Two-way** over RS-485 — the controller supervises, configures, and detects tampering/replacement of the reader.
+- **AES-128 "Secure Channel"** — encrypts reader-to-controller traffic, closing the plaintext gap Wiegand leaves open.
+- **~4,000 ft** runs and **multi-drop** (multiple readers on one connection).
+- Standardized by the **Security Industry Association** and adopted as an **IEC international standard** (Axis/SIA [F]).
 
-> **生物特征一旦泄露，你无法"重置"它。** 卡丢了可以补发、PIN 忘了可以重置，但指纹/虹膜被复制了，你没法换一付。
+**The takeaway:** a DESFire or Seos card on a Wiegand reader is still transmitting over an unencrypted, unsupervised wire. **"Secure credential" and "secure transport" are two separate decisions** — the card protects the credential; OSDP protects the wire.
 
-所以高安全场景里，生物识别**常作为多因素中的一环**（biometric + PIN/card），而不是单独依赖。这也是为什么 MFA（多因素认证）是趋势——**单个凭证都有弱点，叠加才稳。**
+## Selection Framework
 
----
-
-## 怎么选
-
-| 场景 | 选 |
+| Your situation | Choose |
 |---|---|
-| 低成本、低风险（办公室内门） | PIN / 键盘码 |
-| 已有大量老式系统 | Prox 卡（125kHz，兼容性好） |
-| 要安全 + 多应用 | 智能卡（MIFARE/13.56MHz） |
-| 高安全、防伪造 | 智能卡 + 加密协议（OSDP 优先） |
-| 无法代刷、防共享 | 生物识别（建议+MFA） |
-| 远程/移动/临时访客 | 手机凭证 / NFC |
-
----
+| Legacy system, thousands of prox cards, low-risk interior doors | Keep 125kHz prox (document the risk; plan migration) |
+| Low-cost, low-risk interior door | PIN / keypad |
+| Need encryption + one application, budget-conscious | MIFARE Classic — **only** if you accept its broken cipher |
+| Need encryption + multi-application + future-proofing | MIFARE DESFire EV2/EV3 |
+| Enterprise, mobile, or highest assurance | HID Seos / iCLASS SE (or equivalent AES credential) |
+| Vehicle / gate / parking long-range | UHF (860–960 MHz) |
+| Prevent sharing / "who you are" | Biometric — **as one factor of MFA**, never alone |
+| Remote issuance, temporary visitors | Mobile credential (NFC/BLE) |
+| New reader-to-controller wiring | **OSDP** (not Wiegand) |
 
 ## The Author's Take
 
-**我的判断：门禁凭证选择的黄金法则是"按风险选加密级别，别按习惯选"——大多数小企业还停在 1990 年代的 125kHz prox 卡上，纯粹因为"一直用这个"，而不知道这玩意儿是明文、可克隆的。** 三点：
+**Position:** In my view, the credential is the most *over-trusted* layer in access control — organizations spend on encrypted cards and then wire them to readers over a plaintext Wiegand link, which is like putting a deadbolt on a door with an unlocked window.
 
-1. **125kHz prox 卡是安全债，不是资产**——它是 1990 年的老技术，卡里就一个明文 ID，可被几十块钱的设备克隆。如果你管的是一道真正的安全门，prox 卡连"及格线"都没到，应该升级到加密智能卡（13.56MHz MIFARE）或 OSDP 协议。
-2. **Wiegand 接口本身不加密，这是另一个常被忽略的洞**——reader 到 controller 那段线，Wiegand 是明文传输（所以有了更安全的 OSDP 协议）。别以为"用了智能卡"就全链路安全了，加密要贯穿"卡 → reader → controller"全程。
-3. **生物识别是"不可撤销"的**——这是它最大的隐患，不是优点。指纹泄露比丢 100 张卡更糟，因为你换不了。高安全场景，生物识别必须配第二种因素，单独用是给自己挖坑。
+**Reasoning:** First, the industry's own guidance shows 125kHz prox transmits a fixed, unencrypted ID and MIFARE Classic's cipher is cryptographically broken — so anything below DESFire/Seos-class should be treated as a known, documented risk, not a "good enough" default. Second, encryption only counts if it spans the whole path; Wiegand's unencrypted, unsupervised wire silently voids the benefit of an encrypted card, which is exactly why OSDP exists. Third, biometrics are powerful but **non-revocable** — a compromised fingerprint can't be rotated like a card, so biometrics belong as a second factor, not a standalone credential.
 
-结论：**升级路径清晰——PIN → 磁条 → prox → 加密智能卡 → 智能卡+生物 MFA，每一步对应更高的伪造成本。** 你现在在哪一级，取决于你保护的东西值多少。别让"一直这么做"决定你的安全水位。
-
-（以上基于门禁行业标准资料 + 凭证技术原理的专业判断，非我方实测。具体选型应结合实际威胁模型。）
-
----
+**Disclosure:** This is my professional opinion based on the credential-technology and protocol documentation cited below, not first-party testing or a vendor endorsement.
 
 ## FAQ
 
-**Prox 卡和智能卡有什么区别？**
-Prox（125kHz）未加密、可克隆；智能卡（13.56MHz）有加密、reader 和卡双向认证，更难伪造。
+**Is Wiegand a type of card?**
+No. Wiegand is the reader-to-controller **interface** (one-way, unencrypted). The classic "26-bit" is a data *format* on that interface, not a credential technology.
 
-**Wiegand 是一种卡吗？**
-不是。Wiegand 是 reader 和 controller 之间的接口/协议标准（26-bit 是经典格式），不是凭证类型。
+**Prox vs smart card — what's the real difference?**
+Prox (125kHz) transmits a fixed, unencrypted ID and can't store applications. Smart cards (13.56MHz) have memory and cryptography — but the *level* depends on the chip: MIFARE Classic's cipher is broken; DESFire uses AES-128/3DES with mutual authentication.
 
-**生物识别安全吗？**
-不可丢失、防共享，但特征泄露后不可撤销，高安全场景应配合 MFA 使用。
+**What does OSDP do that Wiegand can't?**
+OSDP (SIA) is bidirectional over RS-485, adds AES-128 Secure Channel encryption, supervises the reader (tamper detection), supports ~4,000 ft runs and multi-drop. Wiegand is one-way, plaintext, and ~500 ft.
 
-**MFA 是什么？为什么推荐？**
-多因素认证，组合两种以上凭证（智能卡+PIN、生物+手机），单凭证都有弱点，叠加更稳。
+**Are biometrics the most secure credential?**
+They're hard to lose and share, but a biometric template is **non-revocable** — once compromised it can't be reset like a card or PIN. Use biometrics as one factor of MFA in high-security settings.
 
----
+**What's the migration path off prox?**
+Issue **multi-technology cards** (e.g., Seos + prox, or DESFire + prox) so one badge works on both old and new readers, then replace readers/controllers to OSDP over time — the credential side moves first, the infrastructure follows.
 
 ## Sources
 
-- Koorsen — Types of Access Control Credentials（prox vs smart 双向认证差异）
-- CDVI Americas — Access Control Glossary（125kHz 技术、26-bit Wiegand、active/passive prox）
-- Keri Systems — What Is Wiegand（Wiegand 历史、facility code/ID、已消亡硬卡 + 接口存活）
-- CardLogix — Wiegand Definition（1970s 技术、数据不可改、MIFARE/OSDP）
-- Capture Technologies — Types of Credentials（prox/smart/biometric/PIN/MFA）
+- ColorID — "MIFARE DESFire EV1 vs EV2": https://www.colorid.com/ev1-vs-ev2.html — 125kHz prox most widely used in NA; MIFARE Classic mid-1990s, cipher broken
+- ASAP Identification — "Differences: Proximity, MIFARE, DESFire": https://www.asapident.com/differences-proximity-mifare-mifare-desfire — prox 26–60+ bit fixed ID; DESFire EV1/EV2 microprocessor
+- RFIDCard — "MIFARE Classic vs DESFire": https://www.rfidcard.com/mifare-classic-vs-desfire-key-differences-security-applications-and-how-to-choose-the-right-rfid-card — DESFire AES-128/3DES
+- HID Global — "HID Seos": https://www.hidglobal.com/product-mix/seos — AES-128, mutual authentication, TÜV certification
+- HID Global — "HID Seos Card": https://www.hidglobal.com/products/seos-card — modern cryptography + mutual authentication
+- Telaeris — "Understanding HID Security Card Types": https://telaeris.com/understanding-hid-security-card-types — ISO 15693 read range, ISO 14443 ~10 cm, mobile NFC/BLE
+- Axis — "OSDP protocol in access control" (white paper): https://whitepapers.axis.com/en-us/osdp-protocol-in-access-control — Wiegand plaintext/one-way/500 ft; OSDP AES-128/bidirectional/RS-485/IEC
+- SIA — "Open Supervised Device Protocol (OSDP)": https://www.securityindustry.org/industry-standards/open-supervised-device-protocol — OSDP purpose and scope
+- Nedap Identification Systems — "Long Range RFID": https://www.nedapidentification.com/rfid/long-range-rfid — UHF vehicle identification, TRANSIT up to 15 m
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。「125kHz prox 可被克隆」为行业公认事实（来源明确说明 prox 数据不加密、无加密校验）。我方推断/倾向已在「The Author's Take」标注。本文为技术信息，非选型决策意见。
-
----
-
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+> 研究日期：2026-09-12 · 访问日期：2026-09-12。以上均为第三方权威制造商/标准组织公开资料，非我方实测。本文仅讨论凭证的**原理、风险披露与合规选型**，不提供任何操作层面的进入方法。具体选型应结合真实威胁模型并由专业人员评估。
 
 ## 关联
 
-- → Electronic Access Control Explained（Pillar，含 credential→reader→controller→lock 全栈）
-- → Electric Strike vs Maglock（凭证验证后的物理执行层）
-- → Entity：`https://locktool.com/entity/credential#entity` / `https://locktool.com/entity/prox-card#entity` / `https://locktool.com/entity/smart-card#entity` / `https://locktool.com/entity/wiegand#entity`
+- → [Electronic Access Control Explained](electronic-access-control-explained.md)（凭证→读卡器→控制器→锁具全栈，凭证是第 1–3 层）
+- → [Electric Strike vs Maglock](electric-strike-vs-maglock.md)（凭证验证通过后的物理执行层）
+- → [Lock Security Standards Explained](../standards/lock-security-standards-explained.md)（凭证/锁具相关标准全景）
+- → [Safe Lock Types Explained](../vault/safe-lock-types-explained.md)（电子锁的另一安全域）
+- → Entity：`https://locktool.com/entity/credential#entity` / `https://locktool.com/entity/prox-card#entity` / `https://locktool.com/entity/smart-card#entity` / `https://locktool.com/entity/wiegand#entity` / `https://locktool.com/entity/osdp#entity`

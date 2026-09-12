@@ -1,121 +1,227 @@
 ---
-title: "Safe Lock Types Explained: Mechanical Dial vs Electronic vs Biometric (and the UL 768 Group Ratings)"
-description: "Safe lock types explained: mechanical dial vs electronic keypad vs biometric, plus UL 768 Group 2/2M/1/1R and UL 2058 Type 1 ratings decoded."
+title: "Safe Lock Types Explained: Mechanical Dial vs Key vs Time Lock vs Electronic vs Biometric (UL 768 Groups & EN 1300 Classes)"
+description: "Safe lock types explained: mechanical dial, key, time lock, electronic keypad, and biometric — plus UL 768 Group 2/2M/1/1R, UL 2058 Type 1, and EN 1300 Class A/B/C/D decoded."
 ---
-# Safe Lock Types Explained: Mechanical Dial vs Electronic vs Biometric (and the UL 768 Group Ratings)
+# Safe Lock Types Explained: Mechanical Dial vs Key vs Time Lock vs Electronic vs Biometric (UL 768 Groups & EN 1300 Classes)
 
 > 项目：Locktool · Content
 > 类型：Comparison Pillar（模板 A/C）
 > 所属 Hub：Vault & Safe Hub（/vault/）
-> 主实体：`https://locktool.com/entity/safe-lock#entity`、`https://locktool.com/entity/ul-768#entity`、`https://locktool.com/entity/combination-lock#entity`
+> 主实体：`https://locktool.com/entity/safe-lock#entity`、`https://locktool.com/entity/ul-768#entity`、`https://locktool.com/entity/en-1300#entity`
 > 状态：DRAFT
-> 研究日期：2026-09-11
+> 研究日期：2026-09-12
 
 ---
 
-## Direct Answer
+## Quick Answer
 
-保险柜锁（safe lock）按"用什么驱动"分三大类，核心区别在于**可靠性和抗 manipolation（经验性开锁）能力**：
+Safe locks fall into **five families** distinguished by what drives the bolt and what can fail:
 
-| 类型 | 动力/介质 | 优势 | 短板 |
+| Family | Actuation | Primary failure mode | Best for |
 |---|---|---|---|
-| **机械转盘（Mechanical Dial）** | 纯机械拨盘 | 无电、无电池、无固件，可几十年可靠 | 开锁慢、码难改（常需锁匠重置） |
-| **电子键盘（Electronic Keypad）** | 电池 + 6 位码 | 3 秒开锁、可自改码、多用户 | 依赖电池/电路，需防 EMP/ESD |
-| **生物识别（Biometric）** | 指纹 | 即时、无码可忘 | 传感器寿命、误拒风险 |
+| **Mechanical dial (combination)** | Wheels + gates + fence aligned by dialing | Mis-dialing, worn wheels, lost combination | Long-term, no-power reliability |
+| **Mechanical key lock** | Double-bitted key rotates a bolt/lever pack | Lost key, key duplication, keyway wear | Secondary lock, simple cabinets |
+| **Time lock / time-delay** | Clockwork or timer gates opening | Clock drift, dead battery (electronic variants) | Banking, armed-robbery deterrence |
+| **Electronic keypad** | Battery + PIN drives a solenoid/stepper | Battery, keypad circuit, ESD | Frequent access, multi-user, audit |
+| **Biometric** | Fingerprint sensor releases bolt | Sensor wear, false reject, spoofing | Rapid single-user access |
 
-**关键认知**：保险柜的"抗撬"主要靠**柜体结构**（钢板厚度、螺栓工作），锁的等级衡量的是"抗经验性 manipolation（通过手感/听声/X 光破译密码）"，两者是两码事。
+The lock's **security rating** — not its family — is what matters for manipulation resistance. Mechanical locks are graded by **UL 768** (Group 2 → 2M → 1 → 1R) or **EN 1300** (Class A → B → C → D); electronic locks are graded by **UL 2058 Type 1** or **EN 1300**. The lock rating measures **resistance to non-destructive opening** (manipulation, radiological imaging, electronic attack) — it never tests the body, which is rated separately ([UL 1037 / UL 687](safe-burglary-ratings-decoded.md), EN 14450 / EN 1143-1).
 
-一句话：**机械锁认 UL 768 Group 等级，电子锁认 UL 2058 Type 1，生物识别看传感器品质——但别把"锁的等级"当成"柜子的安全等级"。**
+> **Definition:** A **safe lock** is the locking component that blocks the safe's boltwork and releases it only upon a valid credential (dialed combination, key, PIN, or biometric). Its *security grade* (UL 768 Group, UL 2058 Type 1, or EN 1300 Class) is a tested measure of resistance to unauthorized opening by a skilled attacker using defined techniques and time budgets — independent of the safe body it is mounted in.
 
 ---
 
-## UL 768：机械转盘锁的 Group 等级
+## Mechanical Dial Locks: How They Work and Why They Fail
 
-UL 768 是保险柜/金库机械组合锁的标准，按抗 manipolation 能力分**四个 Group**（由低到高）：
+A combination dial lock is pure mechanical engineering. Turning the dial drives a **drive cam** that rotates a stack of **tumbler wheels** (typically three or four). Each wheel carries a **gate** (a notch). When all gates align under the **fence**, the fence drops in, the **lever** engages, and the bolt retracts. There is no power source, no firmware, and no battery to die.
 
-| Group | 抗专业操作 | 附加能力 | 典型用途 |
+**Key engineering parameters that define the security grade:**
+
+- **Dialing tolerance** — how many graduations off the true number still open the lock. Tighter tolerance = harder to manipulate. Group 2 allows ±1.25 graduations on a 3-wheel lock (±1.50 on 4-wheel); Group 1 tightens to ±1.00 (±1.25 on 4-wheel) `[F]`.
+- **Combination space** — a UL 768 lock must allow at least **1,000,000 combinations** `[F]`. More wheels or a 4-wheel design multiplies this (≈10^8 for 4-wheel Group 2), but raw combination count is not the main defense — *manipulation resistance* is.
+- **Relock trigger** — a spring-loaded secondary catch that fires if the lock is punched or the dial is driven, immobilizing the bolt. Group 1 locks are tested so that "punching" immobilizes the bolt mechanically `[F]`.
+
+**Primary failure modes:** mis-dialing under stress, wheel wear over decades, a lost combination (typically requires a licensed professional to reset), and — the one many owners ignore — *the combination can be guessed if left at the factory default*.
+
+**Representative locks:** Sargent & Greenleaf 6730 (Group 2 workhorse), La Gard 3300/3330 series, Big Red. European equivalents are certified to EN 1300.
+
+---
+
+## Mechanical Key Locks
+
+A double-bitted key (or circular key) rotates a lever pack that throws the bolt. Key locks are fast and cheap, but their security rests entirely on **key control** — who can copy the key and whether the keyway is restricted. In UL terms, a **Type 1 key lock** is rated for ≥20 hours resistance to picking/impressioning plus 60 minutes against forcing, drilling, sawing, prying, pulling, and driving; a **Type 2** key lock for ≥30 minutes combined `[F]`.
+
+**Primary failure modes:** lost keys, unauthorized duplication, keyway wear, and forcing the keyway. Key locks are most often used as the *secondary* lock on dual-lock high-grade safes, not as the primary defense.
+
+---
+
+## Time Locks and Time-Delay Locks (Not the Same Thing)
+
+Two often-confused mechanisms:
+
+- **Time lock** — unlocks only at a *preset clock time* (e.g., a bank vault cannot be opened before the next business day). Mechanical movements, typically **two-movement** for redundancy `[F]`.
+- **Time-delay lock** — after a valid code is entered, the lock waits a programmable **1–99 minute** delay before releasing; used to deter armed robbery (a robber cannot force a fast open). Many add a **duress code** that starts the delay and silently alerts a monitoring centre `[F]`.
+
+**Primary failure modes:** mechanical clock drift (time locks), and, in electronic variants, the delay timer's non-volatile memory is relied upon so a battery change does not reset the timer `[F]`.
+
+---
+
+## Electronic Keypad Locks
+
+A battery-powered keypad accepts a PIN. On a correct entry, an electrical signal drives a **solenoid or stepper motor** to retract the bolt. The security standard is **UL 2058**, which has a **single grade — Type 1**; there is no "Type 2" high-security electronic tier `[F]`. A Type 1 lock is tested against expert manipulation, radiological attack, **electrostatic discharge (ESD)**, **voltage injection**, and **RF/electromagnetic attack**, plus endurance.
+
+**Two facts that trip up buyers:**
+
+1. **A UL Type 1 electronic lock has no key override by design.** UL will not certify a Type 1 lock that includes a physical key backup, because the keyhole reintroduces an attack surface `[F]`. If a keypad lock has a key override, it is *not* Type 1.
+2. **The "million combinations" figure is not the point.** A Type 1 electronic lock may offer far more code combinations than a Group 2 mechanical lock, but brute-force code guessing is not a realistic attack; the tested ESD/RF/manipulation resistance is.
+
+**Primary failure modes:** dead battery (most commonly the external keypad fails, not the lock body — the keypad can often be replaced without drilling, per Liberty Safe `[F]`), ESD damage, and the reliability cost quantified in the [mechanical-vs-electronic](mechanical-vs-electronic-safe-locks.md) page's "20:1 drilling ratio" industry observation.
+
+**Representative locks:** SecuRam, La Gard, Sargent & Greenleaf Type 1 packages.
+
+---
+
+## Biometric Locks
+
+A fingerprint (or occasionally other biometric) sensor authorizes the bolt. Biometric is best understood as an **electronic lock with a biometric credential** rather than a separate security category — its security grade still comes from the lock's electronic standard. The decision is dominated by **sensor quality**: false-reject rate (legitimate user denied), false-accept rate (wrong print accepted), and sensor longevity.
+
+**Primary failure modes:** sensor wear, dirty/dry fingerprints causing false rejects, and spoofing of low-end sensors. For most residential use, biometric trades a marginal speed gain for a meaningful reliability and spoofing risk; verify the underlying electronic lock is genuinely UL Type 1 or EN 1300 certified rather than trusting the "biometric" label.
+
+---
+
+## The Two Rating Systems (This Is the Whole Point)
+
+### North America: UL 768 Groups (mechanical) and UL 2058 Type 1 (electronic)
+
+UL 768 provides **three** core ratings for combination locks — **Group 2, Group 1, Group 1R** — plus **Group 2M** `[F]`:
+
+| Group | Manipulation resistance | Radiological (X-ray) resistance | Notes |
 |---|---|---|---|
-| **Group 2** | 中等 | — | RSC 住宅保险柜最低要求 |
-| **Group 2M** | 2 小时 | 抗辐射 | 中档商用 |
-| **Group 1** | 20 小时 | 高级设计 | TL-15/TL-30 高安全商用 |
-| **Group 1R** | 20 小时 | 抗 X 光（acetal resin 轮） | 最高级，DEA Schedule I/II 合规 |
+| **Group 2** | Moderate (no fixed hour budget) | — | Min 1,000,000 combos; ±1.25 (3-wheel) / ±1.50 (4-wheel) tolerance |
+| **Group 2M** | **2 working hours** | — | The "M" is manipulation, *not* radiological |
+| **Group 1** | **20 working hours** | — | Advanced anti-manipulation features; ±1.00 (3-wheel) / ±1.25 (4-wheel); punch-immobilizes |
+| **Group 1R** | 20 working hours (all Group 1 reqs) | **20 hours** (≤10 curies cobalt-60 at 30") | Acetal resin wheels that don't image under X-ray; **the DEA's requirement** for Schedule I/II storage |
 
-**关键点（Lockwiki + Safe&Vault Store）**：
-- Group 1R 是唯一满足 **DEA（美国缉毒局）对 Schedule I/II 管制物质**合规要求的等级。
-- Group 1/1R 的"20 小时抗专业操作"是硬指标，意味着专业开锁师靠手感/听声破解需要极长时间。
-- **dialing tolerance（拨码容差）**：容差越小越安全。Group 1/1R 的 3-wheel 容差 ±1，Group 2/2M 是 ±1.25。
+**Two corrections that matter:**
 
-**品牌**：Sargent & Greenleaf（S&G 6730 是 Group 2 经典）、LaGard、Big Red。
+1. **Group 2M is *manipulation* resistance (2 hours), not radiological.** Radiological resistance is **Group 1R** (the "R"). Many retailer descriptions conflate the two `[F]`.
+2. **Group 1R is the only mechanical grade the US DEA accepts** for safes storing Schedule I/II controlled substances — and **electronic locks do not meet that specific DEA requirement** even at Type 1, because DEA specifies a Group 1R mechanical lock paired with a TL-30 safe `[F]`.
+
+### Europe: EN 1300 Classes (A/B/C/D)
+
+EN 1300 (first published 2004) is the European classification for **high-security locks** used on safes, strongrooms, and ATMs certified to EN 14450 or EN 1143-1. It grades *any* lock type — key, mechanical combination, or electronic — into **four classes**:
+
+| Class | Security level | Typical application |
+|---|---|---|
+| **A** | Lowest (of the four) | Basic safes, EN 14450 S1/S2, EN 1143-1 Grade 0–2 |
+| **B** | Medium | Commercial safes, EN 1143-1 Grade 3–5 |
+| **C** | High | Banking/financial, EN 1143-1 Grade 6–11 |
+| **D** | Highest | Government, cash-in-transit, Grade 11–13 |
+
+EN 1300 is **not only a security grade** — it also tests **reliability**: every lock must function normally after **10,000** open/close cycles, and a mechanical combination lock after **100** code changes `[F]`. Certification is issued by independent bodies — **ECBS (European Certification Body GmbH)** maintains the authoritative EN 1300 lock list, with VdS among the other accredited certifiers `[F]`.
+
+**A subtle but important rule:** the lock's class depends on its *input device*. For example, the La Gard 1947 combination lock is only Class C when fitted with the spy-proof 1730/1731 dial — the dial (input device) is part of the certified system, and swapping it can change the class `[F]`.
+
+### Which lock class does each safe grade require?
+
+EN 1143-1 and EN 14450 *prescribe* the lock class — the body grade and lock class are coupled in the European system:
+
+| Safe/cabinet grade | Required lock (EN 1300 / EN 17646) |
+|---|---|
+| EN 14450 S1, S2 | 1 × Class A |
+| EN 1143-1 Grade 0–2 | 1 × Class A |
+| Grade 3 | 1 × Class B |
+| Grade 4–5 | 2 × Class B |
+| Grade 6–10 | 2 × Class C |
+| Grade 11–12 | 3 × Class C or 2 × Class D |
+| Grade 13 | 2 × Class D |
+
+`[F]` — Source: Eurosafe / Safelock Systems lock-to-safe mapping. This is why "which lock grade do I need" is usually answered by "which body grade do you need first."
 
 ---
 
-## 电子锁：UL 2058 Type 1
+## Selection Decision Framework
 
-电子保险柜锁的"高安全"认证是 **UL 2058 Type 1**，它用**通过/不通过**标准测，覆盖的攻击向量和机械锁不同：
+Work the chain **safe type → threat model → body grade → lock grade**, never "pick a lock, then find a safe":
 
-- **ESD（静电放电）**、**电压注入**、**RF 攻击**（电磁脉冲/射频）等电子攻击；
-- 加上物理 manipolation 和耐久测试。
+1. **Define the threat.** Casual smash-and-grab (5–10 min, hand tools) vs. professional tool attack (drills, cutting, torch) vs. insider/manipulation risk vs. armed-robbery time pressure.
+2. **Pick the body grade** ([full breakdown](safe-burglary-ratings-decoded.md)): residential → UL 1037 RSC or EN 14450 S1/S2; commercial → UL 687 TL-15/TL-30 or EN 1143-1 Grade 0–5; high-security → TRTL/TXTL or Grade 6+.
+3. **Pick the lock grade to match**: Group 2 / Type 1 / Class A for residential; Group 1/1R or Class B/C for commercial; Class D for the highest tiers.
+4. **Then choose the *family*** on operational grounds: mechanical dial for no-power reliability, key for a simple secondary lock, time-delay for armed-robbery deterrence, electronic for speed + audit, biometric only if sensor quality is proven.
 
-**关键数据**：一个 UL Type 1 电子锁可达 **100 万种组合**，远高于 Group 2 机械锁——从"猜码/暴力尝试"角度看，电子锁的组合空间更大。
-
-**但注意**：电子锁的短板转移到"可靠性"——电池、电路、固件。Liberty Safe 指出，多数电子锁故障源于**外部键盘**（可单独低价更换，无需钻柜），锁体记忆仍在。
+| Your situation | Lock family | Grade to require |
+|---|---|---|
+| Long-term storage, rarely opened, no power dependence | Mechanical dial | Group 2 or Class A (residential); Group 1/1R or Class B/C (commercial) |
+| Daily access, multiple users, want an audit trail | Electronic keypad | UL Type 1 or Class B/C |
+| Banking / controlled-substance (US) | Mechanical dial | **Group 1R + TL-30 body** (DEA) |
+| Retail / cash-holding with robbery risk | Electronic time-delay | Type 1 or Class B/C with time-delay |
+| Dual-lock high-grade safe | Mechanical dial + key (secondary) | Match primary to body grade |
 
 ---
 
-## 选锁的核心决策框架
+## Professional Repair & Maintenance
 
-选保险柜锁，不是"机械永远好"或"电子永远好"，而是看两个维度：
-
-1. **你的威胁是"技术破译"还是"暴力破坏"**——若是防专业开锁师 manipolation，认 UL 768 Group 等级（机械）或 UL 2058 Type 1（电子）；若是防撬砸，看柜体的 UL 687 防盗等级（钢厚 + 螺栓）。
-2. **你的使用频率和场景**——天天开、要方便 → 电子/生物识别；放在那儿几个月不开、要绝对可靠 → 机械转盘。
+- **Battery discipline (electronic):** replace batteries on a schedule, *before* the low-battery warning, and confirm the model uses non-volatile memory so a dead battery never erases the code `[F]`.
+- **Dial servicing (mechanical):** periodic professional lubrication and re-verification of the combination; a Group 1 lock's adjustable wheel-pack torque is a service point, not user-serviced.
+- **Change the factory default combination immediately** — a safe left on the manufacturer default is a statistical gift.
+- **Key control:** restricted keyways and a logged key register are the entire security story for key locks.
+- **Failure recovery:** most electronic-lock failures are the external keypad, replaceable without drilling the safe (Liberty Safe) `[F]`; mechanical locks rarely fail but require a licensed professional when they do.
 
 ---
 
 ## The Author's Take
 
-**我的判断：选保险柜锁，最该避免的误区就是"把锁的等级当成柜子的等级"。这是保险柜选购里被误解最深的一点。** 三点：
+**My position: stop choosing a safe lock by "mechanical vs electronic" first — choose by grade first, then by family, and never let anyone sell you a "biometric" or "million combinations" label as a substitute for a tested grade.** Three points:
 
-1. **锁的 UL 等级测的是"抗经验破译"，不测"抗暴力"**——一个 Group 1 顶级锁，装在一个薄钢板柜上，撬开柜体照样轻松。锁和柜是两套体系（锁=UL 768/2058，柜=UL 687）。
-2. **机械 vs 电子是"可靠性 vs 便利性"的取舍，不是"安全 vs 不安全"**——高质量电子锁（UL Type 1）的安全上限不比机械锁低，甚至组合数更多；你真正要权衡的是"能不能忍受换电池/电路风险"。
-3. **普通人买枪柜/家柜，认准 UL 768 Group 2 就是靠谱底线**——Group 2 是多数 RSC 住宅保险柜的最低要求，且"UL 评级比品牌更重要"（同一品牌不同型号也有差异，但只要是 UL 768 rated 就不会是坑）。
+1. **Grade is the only honest currency.** A "biometric" lock with no UL Type 1 or EN 1300 certification is an uncertified electronic lock with a fingerprint sensor attached — the sensor does not raise the security ceiling. A Group 2 dial and a Type 1 electronic lock are both "residential-grade"; the real decision below the grade is *failure mode*, not *security*.
+2. **The Group 2M / Group 1R conflation is a genuine, common error** — "2M" is two hours of manipulation resistance, and only "1R" carries the radiological (X-ray) rating that the DEA actually requires. If you are buying for controlled-substance compliance, verify "Group 1R," not "2M," and know that electronic locks do not satisfy that specific US regulatory requirement.
+3. **In the European system the lock grade is *dictated* by the body grade** (EN 1143-1 Grade 0–2 require Class A, Grade 6+ require Class C, and so on). That coupling is the cleanest way to avoid the classic mistake of pairing a great lock with a weak body — North American buyers have to make that check manually.
 
-结论：**选锁先问"防谁、防什么"——防技术破译看锁的 Group/Type，防暴力看柜的 UL 687；别指望一把锁解决柜子的所有安全问题。**
+**Conclusion:** read the body grade first, then require the matching lock grade, then pick the family that fits your access pattern and failure tolerance. Grade is the decision; family is the preference.
 
-（以上是基于 UL 768/2058 公开标准 + Lockwiki/Safe&Vault Store/Liberty Safe 权威解读的专业判断，非我方实测。）
+(Disclosure: this is the author's professional interpretation of the published UL 768 / UL 2058 / EN 1300 standards and manufacturer/trade documentation cited below — not first-party test data, and not regulatory or insurance advice.)
 
 ---
 
 ## FAQ
 
-**保险柜锁有哪几种？**
-机械转盘、电子键盘、生物识别（指纹）三大类。
+**What are the families of safe locks?**
+Mechanical dial (combination), mechanical key, time lock/time-delay, electronic keypad, and biometric. Biometric is an electronic lock with a biometric credential, not a separate security tier.
 
-**UL 768 Group 等级怎么分？**
-Group 2 → 2M → 1 → 1R，由低到高。Group 1R 抗 X 光，是 DEA 合规要件。
+**UL 768 Group 2M — what does the "M" mean?**
+Manipulation. Group 2M is rated for 2 working hours of manipulation resistance. Radiological (X-ray) resistance is Group 1R, not 2M.
 
-**机械锁和电子锁哪个更安全？**
-不是绝对问题。高品质电子锁（UL 2058 Type 1）组合数可达 100 万，安全上限不低；区别在"可靠性 vs 便利性"。
+**Which lock grade does the US DEA require for controlled substances?**
+UL Group 1R mechanical lock paired with a TL-30 safe. Electronic locks do not meet this specific DEA requirement.
 
-**锁的等级等于柜子的安全等级吗？**
-不等于。锁测抗 manipolation（UL 768/2058），柜测抗暴力（UL 687），两套体系。
+**What is EN 1300 Class A/B/C/D?**
+The European high-security lock classification: A (lowest) through D (highest), covering key, mechanical combination, and electronic locks, with reliability tests (10,000 cycles).
+
+**Does a biometric lock's fingerprint sensor make it more secure?**
+No — security comes from the lock's tested grade (UL Type 1 / EN 1300), not the sensor. Verify the grade, not the "biometric" label.
+
+**Is a lock's grade the same as the safe's grade?**
+No. The lock grade measures non-destructive-opening resistance (UL 768/2058, EN 1300); the body grade measures forced-entry resistance (UL 1037/687, EN 14450/1143-1).
 
 ---
 
 ## Sources
 
-- [Lockwiki](https://www.lockwiki.com/) — UL 768（Group 2/2M/1/1R、manipolation resistance、不测 forced entry）
-- Safe & Vault Store — Mechanical vs Electronic vs Biometric（UL 768 四 Group、UL 2058 Type 1、ESD/RF 攻击向量）
-- Kcolefas — Safe Locks Definitive Guide（Group 分级、dialing tolerance、20 小时抗操作）
-- Dean Safe — Lock Logic（Group 2M 抗辐射、Group 1R acetal resin 抗 X 光、DEA）
-- Liberty Safe — Electronic vs Mechanical（UL Type 1 100 万组合、键盘故障可单独换）
+- **UL 768** — [Lockwiki: UL 768](https://www.lockwiki.com/index.php/UL_768) (Group 2/1/1R definitions, dialing tolerances, 1M combinations, 20-hour manipulation, Group 1R radiological ≤10 curies cobalt-60 at 30", punching immobilization). Accessed 2026-09-12.
+- **UL 2058** — Safe & Vault Store, "Mechanical vs Electronic vs Biometric Safe Locks" (single Type 1 grade; no key override; DEA Group 1R + TL-30 requirement; SecuRam/LaGard/S&G). Accessed 2026-09-12.
+- **EN 1300** — [Safelock Systems, "Certification"](https://safelocksystems.co.uk/knowledgebase/general-info/certification) (Classes A–D, 10,000 cycles / 100 code changes, La Gard 1947 dial-dependency, ECBS lock list). Accessed 2026-09-12.
+- **EN 1300 lock-to-safe mapping** — [Eurosafe, "Lock Standards EN 1300"](https://www.eurosafe-online.com/lock-standards-en1300) (grade → required lock class table). Accessed 2026-09-12.
+- **ECBS** — European Certification Body GmbH, Lock Guide ECB•S R01 (March 2017), EN 1300 certified lock list.
+- **Time-delay / duress** — [Wikipedia: Time-delay combination locks](https://en.wikipedia.org/wiki/Time-delay_combination_locks); Sargent & Greenleaf time-lock product documentation (two-movement mechanical time lock). Accessed 2026-09-12.
+- **Key lock UL Type 1/Type 2** — Kcolefas, "Safe Locks: The Definitive Guide" (Type 1 ≥20h manipulation + 60min forcing; Type 2 ≥30min; audit trails). Accessed 2026-09-12.
+- **Electronic failure / keypad replacement** — Liberty Safe, "Electronic vs Mechanical" (keypad is the common failure point, replaceable without drilling). Accessed 2026-09-12.
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
-
----
-
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+> Data labeling: `[F]` = published standard/manufacturer fact; `[D]` = derived or industry-experience figure. No figures here are first-party test data. Standards (UL 768/2058, EN 1300) are subject to revision — verify the current edition before any regulated or insured purchase.
 
 ## 关联
 
-- → Lock Security Standards Explained（标准总览）
-- → Entity：`https://locktool.com/entity/safe-lock#entity` / `https://locktool.com/entity/ul-768#entity` / `https://locktool.com/entity/combination-lock#entity`
+- → [Mechanical vs Electronic Safe Locks](mechanical-vs-electronic-safe-locks.md)（可靠性 vs 便利，失效模式）
+- → [Safe Burglary Ratings Decoded](safe-burglary-ratings-decoded.md)（柜体 UL 687 / EN 1143-1 等级）
+- → [Lock Security Standards Explained](../standards/lock-security-standards-explained.md)（标准总览）
+- → [Lock Technology Hub](../technology/index.md)（锁具机制）
+- → Entity：`https://locktool.com/entity/safe-lock#entity` / `https://locktool.com/entity/ul-768#entity` / `https://locktool.com/entity/en-1300#entity`

@@ -1,114 +1,114 @@
 ---
-title: "Electric Strike vs Maglock: How to Choose the Right Electronic Lock Hardware"
-description: "Electric strike vs maglock compared: how each works, fail-safe vs fail-secure behavior, and which electronic lock fits your door, code, and traffic."
+title: "Electric Strike vs Maglock: Holding Force, Fail Behavior, Cycles, and Door Fit Compared"
+description: "Electric strike vs maglock compared on the numbers that matter: holding force, static/dynamic strength, fail-safe vs fail-secure, cycle life, door types, and ANSI/BHMA grades — with a door-by-door decision framework."
 ---
-# Electric Strike vs Maglock: How to Choose the Right Electronic Lock Hardware
+# Electric Strike vs Maglock: Holding Force, Fail Behavior, Cycles, and Door Fit
 
 > 项目：Locktool · Content
 > 类型：Comparison Cluster（模板 A/C）
 > 所属 Hub：Access Control Hub（/access-control/）
 > 主实体：`https://locktool.com/entity/electric-strike#entity`、`https://locktool.com/entity/maglock#entity`
-> 状态：DRAFT
-> 研究日期：2026-09-11
+> 状态：UPGRADED v0.2
+> 研究日期：2026-09-12
 
 ---
 
-## Direct Answer
+## Quick Answer
 
-电子门禁里最常要做的二选一，就是 **electric strike（电控锁舌）vs maglock（电磁锁）**。两者都用低电压控制开门，但原理、失效方式、合规性完全不同：
+Electric strikes and maglocks both unlock a door electrically, but they are **different mechanisms with different failure modes and different doors**. A strike is a frame-mounted keeper that releases the existing mechanical latch and can be **fail-safe or fail-secure**; a maglock is an electromagnet-and-armature that is **inherently fail-safe**. Choose by **door material first, then fail-mode and code, then strength numbers.**
 
-| 维度 | Electric Strike | Maglock |
+> **Definition — Electric Strike:** a frame-mounted, electrically operated keeper that releases a mechanical lock's latch/bolt when energized, replacing the standard strike plate; listed to **ANSI/BHMA A156.31**.
+> **Definition — Maglock (Electromagnetic Lock):** a frame-mounted electromagnet plus a door-mounted steel armature that holds the door closed by magnetic force; listed to **ANSI/BHMA A156.23**. Inherently fail-safe — it releases the instant power is removed.
+
+## The Engineering Comparison
+
+| Dimension | Electric Strike | Maglock |
 |---|---|---|
-| 结构 | 门框内的电动卡榫，替换标准 strike plate | 门框电磁铁 + 门上 armature 板 |
-| 锁定原理 | 电动释放门舌 | 电磁吸力抱住门（600/1200 lb） |
-| 失效模式 | **可 fail-safe 或 fail-secure** | **天生 fail-safe**（断电失磁开） |
-| 门型 | 金属/木门（有锁舌硬件） | 玻璃/铝框门/高流量门 |
-| 机械逃生 | ✅ 保留把手机械开锁 | ❌ 需额外 REX 设备 |
+| Mechanism | Frame keeper releases existing latch/bolt | Electromagnet holds a steel armature plate |
+| Holding mechanism | The **mechanical latch** still holds; strike controls release | **Magnetic force** alone holds the door |
+| Fail behavior | **Selectable** fail-safe or fail-secure | **Inherently fail-safe** (always) |
+| Power's role | Applied to **release** (fail-secure) or **hold** (fail-safe) | Applied continuously to **hold** |
+| Standard | ANSI/BHMA **A156.31** | ANSI/BHMA **A156.23** |
+| Typical doors | Metal/wood with an existing latch/bolt | Glass, aluminum-frame, frameless, high-traffic |
+| Mechanical egress | Keeps lever/panic hardware | **None** — requires REX device |
+| Fire-rated opening | Fire-rated strikes are **fail-secure only** | Requires REX + fire-alarm release |
+| Representative strength | Static 1,500–2,500+ lb; dynamic 70–350 ft-lb | Holding force 600–1,200 lb (shear locks 2,000–2,700 lb) |
 
-一句话：**electric strike 是"门框卡榫"、能二选一 fail 模式、更适合普通办公室门；maglock 是"电磁吸力"、天生 fail-safe、只适合玻璃门/高流量门。** 选哪个，先看"这扇门是什么材质、断电时该开还是锁"。
+## The Numbers, With Sources
 
----
+**Electric strike strength (ANSI/BHMA A156.31).** Grade is set by cycle testing plus static and dynamic strength. A156.31-2024 requires a **Grade 1 strike to pass 500,000 cycles** [F]. Top commercial strikes exceed this by a wide margin — ASSA ABLOY's HES 1006 series is spec'd at **2,500 lb static strength (tested past 3,000 lb), 350 ft-lb dynamic strength (fail-secure), and 1,000,000+ cycles**, with UL 1034 and UL 294 listings [F]. A lighter-duty 5200-series Grade 1 strike specs **1,500 lb static / 70 ft-lb dynamic / 500,000 cycles** [F]. The spread matters: static strength is the door's resistance to being *shoved* open, dynamic strength its resistance to *impact*.
 
-## 两个决定性变量
+**Maglock holding force (ANSI/BHMA A156.23).** A156.23 requires **Grade 1 maglocks to withstand 1,000,000 cycles** while continuing to meet electrical and strength requirements [F]. Holding force is the headline spec: common security maglocks run **600–1,200 lb**; shear locks reach **2,000–2,700 lb** (SDC [F]). The critical SDC guidance already flagged in this cluster: **a maglock under 1,200 lb holding force is only suitable for traffic control, not as a security lock** — treat that number as a floor, not a goal.
 
-### 1. 失效模式（Fail-Safe vs Fail-Secure）
-- **Electric strike**：能按型号/电压/现场接线配置成 fail-safe 或 fail-secure——所以它是"灵活性之王"，尤其适合"既要逃生合规、又要某些门防盗"的项目。
-- **Maglock**：靠电磁保持吸力，**断电必失磁解锁**，本质是 fail-safe 设备。想在"断电也要锁"的场景用 maglock，物理上行不通，必须靠备用电源等补偿。
+## Two Decision Variables That Override Brand
 
-### 2. 门型/机械逃生
-- **Electric strike**：配 lever 把手锁，**保留了"从里面一拉就出"的机械逃生**，消防验收容易过——这是它"code-friendly"名声的来源。
-- **Maglock**：没有机械逃生，**法规要求必须配 REX（Request-to-Exit）装置或动作传感器**，从内部靠近时自动释放。少了 REX，就是消防违规。
+### 1. Fail mode (the compliance variable)
+- **Strike** is the flexible choice: field-selectable fail-safe **or** fail-secure. Most deployments are fail-secure (Axis [F]).
+- **Maglock** is always fail-safe. If the door must *stay locked* on power loss (server room, perimeter), a maglock is the wrong tool — no configuration changes its physics.
 
----
+### 2. Door material and egress (the physical variable)
+- **Strike** requires a frame and an existing latch/bolt — glass or frameless aluminum doors are out.
+- **Maglock** fits glass/frameless doors, but has **no mechanical egress**, so code (NFPA 101 access-controlled egress; IBC sensor release) requires a **REX device or motion sensor** plus **fire-alarm release**. Skip the REX and you have an inspection failure, not a minor omission.
 
-## 一个关键的工程红线：maglock 的 REX
+## The Fire-Door Constraint (Often Missed)
 
-Maglock 是"断电才开"的失效安全设计，但当有人从**内部**要出去时，不能靠断电（那会把外人也放进来）。所以**法规强制要求** maglock 门配：
+A **fail-safe electric strike cannot be used on a fire-rated opening**: with power off it doesn't positively latch, so the door loses its fire/smoke barrier (HES fire-rating is **fail-secure only** — UL 10C 3-hour [F]). If you need an electric strike on a fire door, it must be the **fail-secure** variant listed for the door's rating. Maglocks on fire doors likewise need the full REX + fire-alarm release treatment.
 
-- **REX 按钮/动作传感器**——从内部靠近或按压，即切断磁力让人出去；
-- 同时保留"断电失磁"作为**消防报警联动**的兜底。
+## Door-by-Door Decision Framework
 
-**少了 REX 的 maglock，是典型的消防违规，验收一定过不了。**
-
----
-
-## 决策框架
-
-| 你的场景 | 选哪个 |
-|---|---|
-| 普通办公室木门/金属门，已有锁舌硬件 | **Electric strike**（code-friendly，机械逃生） |
-| 玻璃门 / 铝框门 / 店铺门面 | **Maglock**（机械锁装不上） |
-| 高流量大门 / 自动门 / 逃生通道 | **Maglock**（fail-safe 天然匹配） |
-| 断电也必须锁住的高安全区 | **Electric strike（fail-secure）**，别用 maglock |
-
-**注意 holding force 的坑**（SDC 权威原文）：**吸力小于 1200 lb 的 maglock，只适合 traffic control（交通管制）**，不能当"安全锁"用。买 maglock 别图便宜选低吸力型号。
-
----
+| Your scenario | Choose | Why |
+|---|---|---|
+| Office wood/metal door with existing latch/bolt | **Electric strike** (fail-secure default) | Keeps mechanical handle + latch; code-friendly egress |
+| Glass / aluminum-frame / frameless / storefront | **Maglock** | No frame to cut a strike into |
+| High-traffic lobby / automatic door | **Maglock** | Fail-safe matches egress; no moving keeper to wear |
+| Server room / storage that must stay locked in an outage | **Electric strike, fail-secure** | Maglock would unlock on power loss |
+| Stairwell re-entry door | **Fail-safe strike or lockset** | Unlocks on fire alarm for re-entry |
+| Fire-rated door needing electric control | **Fail-secure strike (fire-rated)** or fire-rated electrified lockset | Fire-rated strikes are fail-secure only |
+| Perimeter/vehicle gate needing long read range | Neither — **UHF + gate hardware** | These are pedestrian-door locks |
 
 ## The Author's Take
 
-**我的判断：electric strike 和 maglock 不是"谁更好"的问题，而是"这扇门的物理属性和消防属性决定你根本没得选"的问题。很多人纠结错了方向。** 三点：
+**Position:** In my view, "electric strike vs maglock" is usually the wrong question — the door material and the egress code have already made the decision for you, and the only genuinely open choice is whether a strike should be fail-safe or fail-secure.
 
-1. **门型先于偏好**——玻璃门/铝框门装不了 electric strike（要门框里有锁舌槽），只能 maglock。普通木门/金属门 maglock 反而累赘（要额外 REX + 表面安装）。先看门是什么做的，再谈选型。
-2. **fail-safe/fail-secure 是合规问题，不是技术选择题**——逃生门错配 fail-secure（断电锁死）是消防责任事故。maglock 天生 fail-safe，你要"断电锁死"就别用它。
-3. **maglock 别图便宜买低吸力**——<1200 lb 的 maglock 只能当 traffic control。真当安全锁用，认 1200 lb 级 + REX + 消防联动，三样缺一不可。
+**Reasoning:** First, a frameless glass door physically cannot take a strike, and a wood door with a latch gets no benefit from a maglock's REX overhead — so in most openings the hardware is effectively pre-selected by the door. Second, the real risk lives in the fail-mode call, which is a fire-and-life-safety decision, not a preference: a fail-secure strike on an egress door is a liability, and a fail-safe strike on a fire door is a code violation. Third, on the strength numbers, buyers anchor on "1,200 lb" as a maglock's selling point when that's actually the *minimum* for a security lock — below it you've bought traffic control.
 
-结论：**选型顺序是"门材质 → 逃生/防火要求 → fail 模式 → 才到品牌和价格"。** 把顺序搞反（先看价格再套门型），是电子门禁项目里最常见的翻车方式。
-
-（以上是基于电子门禁从业指南 + National Lock Supply/Benson/SDC 权威资料的专业判断，非我方实测。）
-
----
+**Disclosure:** This is my professional opinion based on the ANSI/BHMA A156.31/A156.23 standards, manufacturer specifications (ASSA ABLOY/HES, SDC), and NFPA 101/IBC egress requirements cited below — not first-party testing.
 
 ## FAQ
 
-**Maglock 是 fail-safe 还是 fail-secure？**
-天生 fail-safe——断电失磁即解锁。这不是可选配置，是物理本质。
+**Is a maglock fail-safe or fail-secure?**
+Inherently fail-safe — it releases the instant power drops. This is physics, not a setting.
 
-**Electric strike 能装玻璃门吗？**
-不能。玻璃门/铝框门用 maglock。
+**Can an electric strike go on a glass door?**
+No. It needs a frame and an existing latch/bolt. Glass/frameless doors use maglocks.
 
-**Maglock 一定要配 REX 吗？**
-是。法规强制要求 REX 或动作传感器，否则消防违规、验收不过。
+**Does a maglock door always need a REX device?**
+Yes, for egress doors. A maglock has no mechanical egress, so code requires a sensor or "PUSH TO EXIT" device plus fire-alarm release.
 
-**买 maglock 看吸力吗？**
-看。小于 1200 lb 的只能做 traffic control，不能当安全锁。
+**What holding force should a security maglock have?**
+1,200 lb or higher as a practical floor; below that it's traffic control, not security. Shear locks reach 2,000–2,700 lb.
 
----
+**Can a fire-rated door use a fail-safe electric strike?**
+No. Fire-rated strikes are fail-secure only — a fail-safe strike doesn't positively latch when unpowered.
 
 ## Sources
 
-- National Lock Supply — Electric Strike vs Maglock（fail-safe/secure 配置、REX 要求、code-friendly）
-- Benson Inc — Electric Strike vs Maglock（安全权衡、latch engagement、门状态反馈）
-- SDC Security — MagLock Holding Force（<1200 lb 只可 traffic control 的权威原文）
-- NGTECO — Maglocks vs Electric Strikes（玻璃门/铝框 vs 办公室门、天生 fail-safe）
+- BHMA — "A156.31-2024 Electric Strikes and Frame Mounted Actuators": http://buildershardware.com/ANSI-BHMA-Standards/Hardware-Highlights/A15631-2024-Electric-Strikes-and-Frame-Mounted-Actuators — Grade 1 = 500,000 cycles
+- ASSA ABLOY / HES — "1006 Electric Strike" catalog: https://www.assaabloy.com/apac-blueprint/en/images/product-assets/sea-markets/electromechanical/electric-strike/1006-series/assets/documents/1006-series-electric-strike-catalog.pdf — 2,500 lb static / 350 ft-lb dynamic / 1M cycles; UL 1034, UL 294, UL 10C fail-secure only
+- HES 5200 Series (Sweets Construction): http://sweets.construction.com/swts_content_files/56864/P288351.htm — 1,500 lb static / 70 ft-lb dynamic / 500,000 cycles, field-selectable fail mode
+- BHMA — "ANSI/BHMA A156.23 Electromagnetic Locks" (Hardware Highlights): https://buildershardware.com/Portals/0/Files/2019%20Hardware%20Highlights/156.23%20HH%202019.pdf — Grade 1 = 1,000,000 cycles
+- SDC Security — "Locking Devices: Electromagnetic Locks" catalog: https://www.sdcsecurity.com/docs/MagneticLocks-Catalog.pdf — 1,200 lb holding force, A156.23 Grade 1; 2,000/2,700 lb shear locks
+- Axis — "Fail-safe vs fail-secure": https://newsroom.axis.com/en-us/blog/fail-safe-vs-fail-secure — strikes mostly fail-secure; mechanical override requirement
+- Allegion / I Dig Hardware — "Decoded: Fail Safe vs Fail Secure" (2023-10): https://idighardware.com/2023/10/decoded-fail-safe-vs-fail-secure-when-and-where — fail-safe/secure refer to the secure side
+- National Training Center — "Access Control – Egress Requirements": https://nationaltrainingcenter.com/access-control-egress-requirements — REX, PUSH TO EXIT, fire-alarm release
+- Consulting-Specifying Engineer — "Door locking requirements in NFPA 101": https://www.csemag.com/door-locking-requirements-in-nfpa-101 — sensor release and delayed-egress rules
 
-> 数据标注说明：本文关键数据均出自上方权威来源（标 `[F]` 事实）。凡属我方推断/折减的结论，已在「The Author's Take」中明确标注「非实测/专业判断」，不混同于来源事实。
-
----
-
-> 研究日期：2026-09-11 · 访问日期：2026-09-11。以上来源均为第三方权威来源与制造商公开资料，非我方实测；关键数据已按来源等级区分 `[F]`（事实）/`[D]`（推导/经验）。法规类信息随监管变化可能过期，执业前务必核实当地最新规定。
+> 研究日期：2026-09-12 · 访问日期：2026-09-12。以上均为第三方权威标准组织/制造商/监管公开资料，非我方实测；关键数据按来源等级标注 `[F]`（事实）。静态/动态强度与吸力数值随型号与测试条件而异，以厂商最新规格与型号级测试报告为准。法规类信息随监管变化可能过期，执业前务必核实当地现行规定与 AHJ 执法口径。
 
 ## 关联
 
-- → Electronic Access Control Explained（Pillar）
+- → [Electronic Access Control Explained](electronic-access-control-explained.md)（全栈与 fail-safe/fail-secure 总览）
+- → [Access Control Credentials Explained](access-control-credentials-explained.md)（凭证层，验证通过后触发本页的锁具）
+- → [Fire-Rated Door Hardware Explained](../standards/fire-rated-door-hardware-explained.md)（防火门逃生硬件与 fail-safe 消防联动）
+- → [ANSI/BHMA Grades Decoded](../standards/ansi-bhma-grades-decoded.md)（A156.x 分级如何读）
 - → Entity：`https://locktool.com/entity/electric-strike#entity` / `https://locktool.com/entity/maglock#entity`
